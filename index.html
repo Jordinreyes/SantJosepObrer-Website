@@ -3,11 +3,258 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
+    <meta
+      name="keywords"
+      content="Educación Infantil, Primaria, Bachillerato, Bachillerato Internacional, Formación Profesional, Formación Profesional Dual Intensiva, Erasmus, Sant Josep Obrer, Centro concertado Palma"
+    />
+    <meta
+      name="description"
+      content="El Grupo Educativo de Sant Josep Obrer comprende la educación escolar desde Infantil hasta Bachillerato o Formación Profesional"
+    />
+    <meta name="autor" content="Jordin Reyes" />
+    <meta property="og:title" content="Bienvenidos | Grup Educatiu SJO | Sant Josep Obrer | Corpus Christi" />
+    <meta
+      property="og:description"
+      content="El Grupo Educativo SJO imparte todas las etapas educativas, desde la escoleta hasta la Educación Secundaria Obligatoria y postobligatoria.
+      Ofrecemos actividades extraescolares, guardería, comedor, idiomas y Erasmus.
+      Las etapas postobligatorias cuentan con Bachillerato Humanístico, Bachiller Social y Humanístico y ofrecemos Formación Profesional Dual Intensiva de Administración e Informática de Grado Medio y Grado Superior."
+    />
+    <meta name="robots" content="index, follow" />
+    <title>Bienvenido | SJO</title>
     <link rel="stylesheet" href="src/app.css" />
     <link rel="stylesheet" href="src/app.scss" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <h1 class="bg-[#000] text-2xl text-[#f00]">HOLA MUNDO</h1>
+    <section class="container__section-header relative flex min-h-dvh items-center justify-center">
+      <header
+        class="header z-100 p-(--header-padding) fixed left-0 right-0 top-0 flex w-full items-center justify-between"
+        id="header"
+      >
+        <a href="index.html" class="h-auto max-h-full max-w-[7rem]">
+          <img src="public/logo/image.png" alt="Logo Sant Josep Obrer" class="h-auto w-full" />
+        </a>
+        <nav class="navbar__header" aria-label="Menu principal">
+          <ul class="navbar__list text-size-navbar gap-(--header-gap) text-(--header-color) mr-[30px] flex">
+            <li>
+              <a href="#" class="link-hover-navbar">ESTUDIOS</a>
+              <i class="bi bi-plus"></i>
+            </li>
+            <li>
+              <a href="#" class="link-hover-navbar">CENTROS</a>
+              <i class="bi bi-plus"></i>
+            </li>
+            <li>
+              <a href="#" class="link-hover-navbar">SJO INTERNACIONAL</a>
+              <i class="bi bi-plus"></i>
+            </li>
+            <li>
+              <a href="#" class="link-hover-navbar">EXTRA</a>
+              <i class="bi bi-plus"></i>
+            </li>
+            <li>
+              <a href="#" class="link-hover-navbar">INNOVACIÓN</a>
+              <i class="bi bi-plus"></i>
+            </li>
+            <li>
+              <a href="#" class="link-hover-navbar">SOLIDARIDAD</a>
+              <i class="bi bi-plus"></i>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="bg-(--color-enlace--contact) ml-2 rounded-full px-6 py-3 transition duration-500 hover:bg-[#8B8442]"
+                id="contactar"
+              >
+                CONTACTAR
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="absolute right-10 top-1/2 flex -translate-y-1/2 transform flex-col items-end gap-2">
+        <a
+          href="#"
+          class="border-(--border--iconos-medio--header) flex h-[52px] w-[52px] items-center justify-center rounded-full border-2 text-white hover:border-none hover:bg-[#8B8442]"
+          title="go to facebook"
+        >
+          <img src="public/icon/facebook.svg" alt="logo de facebook de la seccion header" class="h-6 w-6" />
+        </a>
+
+        <a
+          href="#"
+          class="flex h-[52px] w-[52px] items-center justify-center rounded-full border-2 border-white text-white hover:border-none hover:bg-[#8B8442]"
+          title="go to instagram"
+        >
+          <img src="public/icon/instagram.svg" alt="logo de instagran de la seccion header" class="h-6 w-6" />
+        </a>
+      </div>
+
+      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 transform text-center text-sm text-white">
+        <p class="mb-2">SCROLL DOWN</p>
+        <div class="scroll-container mx-auto">
+          <div class="scroll-bar"></div>
+        </div>
+      </div>
+    </section>
+
+    <main class="main" id="main">
+      <section class="grid grid-cols-12 gap-4 px-6 py-12">
+        <div class="col-start-1 col-span-4 flex items-center">
+
+            <h1 class="text-5xl font-light text-[#43699B] leading-tight">
+              Colegio Sant Josep Obrer - Educación Integral en Palma de Mallorca
+            </h1>
+        </div>
+    
+        <div class="col-start-8 col-span-5 flex flex-col justify-center space-y-4">
+            <p class="text-[#43699B]">
+              El Colegio Sant Josep Obrer es un centro concertado en Palma de Mallorca que ofrece una educación completa y de calidad en las etapas de Educación Secundaria Obligatoria (ESO), Bachillerato y Formación Profesional. Comprometido con el desarrollo académico y personal de sus alumnos, el centro apuesta por metodologías innovadoras, programas Erasmus+ y una sólida formación en valores.
+            </p>
+            <a href="#" class="bg-[#43699B] px-6 py-3 rounded-full text-white w-fit hover:bg-[#CEDAE7] hover:text-[#43699B] transition duration-500 text-xs">
+                DESCUBRE CADA RINCÓN <i class="bi bi-arrow-right ml-2"></i>
+            </a>
+        </div>
+    
+        <div class="col-start-2 col-span-11 mt-12 overflow-hidden px-4">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper flex items-center">
+
+                    <div class="swiper-slide w-[344px] h-[532px] relative rounded-lg overflow-hidden flex-shrink-0">
+                        <img src="public/picture/desktop/HomePage-Erasmus.webp" class="w-full h-full object-cover" alt="Foto de unos limones de soller"/>
+                        <div class="absolute bottom-5 left-5 text-white drop-shadow p-4">
+                            <h6 class="text-2xl font-semibold">SOLLER</h6>
+                            <p class="text-sm opacity-0 translate-y-6 transition-all duration-300">Famosos por sus naranjas <br> y mariscos</p>
+                            <a href="#" class="text-sm inline-block mt-2 hover:border-gray-300">CONOCER MÁS <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide w-[344px] h-[532px] relative rounded-lg overflow-hidden flex-shrink-0">
+                        <img src="src/picture/c755e187c97d3795d94ae3008901ac0b.png" class="w-full h-full object-cover" alt="Foto de lindos paisajes de valldemosa"/>
+                        <div class="absolute bottom-10 left-5 text-white drop-shadow">
+                            <h6 class="text-2xl font-semibold">VALLDEMOSA</h6>
+                            <p class="text-sm opacity-0 translate-y-6 transition-all duration-300">Cuna de emblemática <br> coca de patata</p>
+                            <a href="#" class="text-sm inline-block mt-2 hover:border-gray-300">
+                                CONOCER MÁS <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+   
+                    <div class="swiper-slide w-[344px] h-[532px] relative rounded-lg overflow-hidden flex-shrink-0">
+                        <img src="src/picture/762743585e9835812a105c011ab15ddd.png" class="w-full h-full object-cover" alt="Foto de un lindo pueblo DEIA"/>
+                        <div class="absolute bottom-10 left-5 text-white drop-shadow">
+                            <h6 class="text-2xl font-semibold">DEIA</h6>
+                            <p class="text-sm opacity-0 translate-y-6 transition-all duration-300">Un pintoresco refugio artístico en <br>la sierra de Tranmontana</p>
+                            <a href="#" class="text-sm inline-block mt-2 hover:border-gray-300">CONOCER MÁS →</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide w-[344px] h-[532px] relative rounded-lg overflow-hidden flex-shrink-0">
+                        <img src="src/picture/8772f5cd039ae943762e27e77ed15e5e.png" class="w-full h-full object-cover" alt="un lindo mirador que esta en pollensa"/>
+                        <div class="absolute bottom-10 left-5 text-white drop-shadow">
+                            <h6 class="text-2xl font-semibold">POLLENSA</h6>
+                            <p class="text-sm opacity-0 translate-y-6 transition-all duration-300">Donde la cocina mallorquina se<br> disfruta en su máximo esplendor</p>
+                            <a href="#" class="text-sm inline-block mt-2 hover:border-gray-300">CONOCER MÁS →</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide w-[344px] h-[532px] relative rounded-lg overflow-hidden flex-shrink-0">
+                        <img src="src/picture/5afe7b34a6a162d0fe973d743df9e51b.png" class="w-full h-full object-cover" alt="Lindas playas de banyalbufar"/>
+                        <div class="absolute bottom-10 left-5 text-white drop-shadow">
+                            <h6 class="text-2xl font-semibold">ALCUDIA</h6>
+                            <p class="text-sm opacity-0 translate-y-6 transition-all duration-300">Con su bien conservado<br> Csco antiguo</p>
+                            <a href="#" class="text-sm inline-block mt-2 hover:border-gray-300">CONOCER MÁS →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      </section>
+    </main>
+
+    <footer class="bg-(--footer-bg) text-(--footer-color) px-6 pb-4 pt-8">
+      <div class="mb-8 flex flex-col items-center justify-between md:flex-row">
+        <div class="mb-6 md:mb-0">
+          <img src="public/logo/HomePgae-Logo-Header.png" alt="Logo Sant Josep Obrer Footer" class="h-14 md:h-16" />
+        </div>
+
+        <div class="flex gap-4">
+          <img
+            src="public/icon/instagram.svg"
+            alt="Instagram"
+            class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 rounded-full p-2 transition duration-500"
+          />
+          <img
+            src="public/icon/facebook.svg"
+            alt="Facebook"
+            class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 rounded-full p-2 transition duration-500"
+          />
+          <img
+            src="public/icon/Logo--youtube.svg"
+            alt="YouTube"
+            class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 rounded-full p-2 transition duration-500"
+          />
+          <img
+            src="public/icon/tiktok.svg"
+            alt="X"
+            class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 rounded-full p-2 transition duration-500"
+          />
+          <img
+            src="public/icon/x.svg"
+            alt="TikTok"
+            class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 rounded-full p-2 transition duration-500"
+          />
+        </div>
+      </div>
+
+      <nav class="mb-4 flex flex-wrap gap-x-12 gap-y-4 text-sm" aria-label="navegacion footer">
+        <a href="#" class="whitespace-nowrap">
+          DESCUBRE LA CIUDAD
+          <i class="bi bi-plus"></i>
+        </a>
+        <a href="#" class="whitespace-nowrap">
+          RUTAS GASTRONÓMICAS
+          <i class="bi bi-plus"></i>
+        </a>
+        <a href="#" class="whitespace-nowrap">
+          BODEGAS
+          <i class="bi bi-plus"></i>
+        </a>
+        <a href="#" class="whitespace-nowrap">
+          PLANIFICA TU VIAJE
+          <i class="bi bi-plus"></i>
+        </a>
+        <a href="#" class="whitespace-nowrap">
+          ¿QUÉ HACER?
+          <i class="bi bi-plus"></i>
+        </a>
+        <a href="#" class="whitespace-nowrap">
+          ACTUALIDAD
+          <i class="bi bi-plus"></i>
+        </a>
+      </nav>
+
+      <hr class="my-4 border-white/40" />
+
+      <div class="mb-6 flex flex-col items-center justify-between gap-4 text-sm md:flex-row">
+        <button
+          class="flex items-center gap-2 rounded-full bg-[#b4a998] px-5 py-2 font-medium text-[#fff] transition duration-500 hover:bg-[#8B8442]"
+        >
+          <img src="public/icon/Phone.svg" alt="logo de llamada footer" />
+          Contáctanos
+        </button>
+
+        <div class="flex flex-wrap justify-center gap-6">
+          <a href="#" class="hover:underline">Preguntas frecuentes</a>
+          <a href="#" class="hover:underline">Formulario de contacto</a>
+          <a href="#" class="hover:underline">Oficina de turismo</a>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script src="index.js"></script>
 </html>
