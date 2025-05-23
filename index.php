@@ -76,6 +76,7 @@
                 href="contacto.html"
                 class="bg-(--color-enlace--contact) ml-2 rounded-full px-6 py-3 transition duration-500 hover:bg-[#8B8442]"
                 title="ir al formulario de contacto"
+                id="contactar"
               >
                 CONTACTAR
                 <i class="bi bi-arrow-right"></i>
