@@ -13,6 +13,7 @@
 
     /*  VARIABLES PARA HOVER Y TRANSICIONES */
     --navbar-hover: #f00;
+    --navbar-bg-color: #fff;
     --transition-navbar: 0.5s;
 }
 
@@ -119,6 +120,11 @@
     color: var(--navbar-hover) !important;
     transform: scale(1.05) !important;
 }
+
+.header-white .navbar__list .sombra a:hover {
+    color: var(--navbar-bg-color) !important;
+    transform: scale(1.05) !important;
+}
     
 .header-white .navbar__list i {
     color: #000!important;
@@ -130,3 +136,7 @@
 .header-white .navbar__list #contactar i {
     color: #fff !important;
 }
+
+ 
+ 
+  

@@ -28,3 +28,46 @@ window.addEventListener("scroll", () => {
 
   lastScroll = currentScroll;
 });
+
+/**
+ * MENU DE NAVEGACIÓN
+ */
+// Menú móvil
+// Menú móvil
+document.getElementById("hamburger").addEventListener("click", () => {
+  document.getElementById("mobile-menu").classList.remove("-translate-x-full");
+});
+
+document.getElementById("close-menu").addEventListener("click", () => {
+  document.getElementById("mobile-menu").classList.add("-translate-x-full");
+});
+
+// Submenús móviles (solo con el icono)
+document.querySelectorAll(".submenu-toggle").forEach((toggle) => {
+  const icon = toggle.querySelector("i");
+  icon.addEventListener("click", (e) => {
+    e.preventDefault();
+    const submenu = toggle.nextElementSibling;
+    submenu.classList.toggle("hidden");
+  });
+});
+
+// Submenús desktop (solo con el icono)
+document.querySelectorAll(".submenu-desktop-toggle").forEach((toggle) => {
+  const icon = toggle.querySelector("i");
+  icon.addEventListener("click", (e) => {
+    e.preventDefault();
+    const submenu = toggle.nextElementSibling;
+    document.querySelectorAll(".submenu-desktop-toggle + ul").forEach((ul) => {
+      if (ul !== submenu) ul.classList.add("hidden");
+    });
+    submenu.classList.toggle("hidden");
+  });
+});
+
+// Cierra los submenús si haces click fuera
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".submenu-desktop-toggle")) {
+    document.querySelectorAll(".submenu-desktop-toggle + ul").forEach((ul) => ul.classList.add("hidden"));
+  }
+});
