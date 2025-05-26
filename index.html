@@ -41,10 +41,10 @@
 
         <div
           id="mobile-menu"
-          class="fixed left-0 top-0 z-40 h-full w-full -translate-x-full transform overflow-y-auto bg-white p-6 transition-transform duration-300 ease-in-out lg:hidden"
+          class="z-100 fixed left-0 top-0 h-full w-full -translate-x-full transform overflow-y-auto bg-white p-6 transition-transform duration-300 ease-in-out lg:hidden"
         >
           <div class="mb-6 flex items-center justify-between">
-            <a href="index.php" class="h-auto max-h-full max-w-[7rem]">
+            <a href="index.html" class="h-auto max-h-full max-w-[7rem]">
               <img src="public/logo/image.png" alt="Logo Sant Josep Obrer" class="h-auto w-full" />
             </a>
             <button id="close-menu" class="text-3xl text-black">
@@ -424,35 +424,38 @@
     </section>
 
     <main class="main" id="main">
-      <section class="grid grid-cols-12 gap-4 px-6 py-12">
-        <div class="col-span-4 col-start-1 flex items-center">
-          <h1 class="text-5xl font-light leading-tight text-[#43699B]">
+      <section class="flex flex-col gap-8 px-6 py-12">
+        <div class="flex flex-col items-center justify-center md:flex-row md:justify-between">
+          <h1
+            class="w-full text-center text-3xl font-light leading-tight text-[#43699B] sm:text-4xl md:w-1/2 md:text-left md:text-5xl"
+          >
             Colegio Sant Josep Obrer en Palma de Mallorca
           </h1>
-        </div>
-
-        <div class="col-span-5 col-start-8 flex flex-col justify-center space-y-4">
-          <p class="text-[#43699B]">
-            Centro educativo concertado en Palma que ofrece ESO, Bachillerato, FP y programas internacionales como
-            Erasmus+. Promovemos el desarrollo integral con valores, tecnología e inclusión.
-          </p>
-          <a
-            href="#"
-            class="w-fit rounded-full bg-[#92092B] px-6 py-3 text-xs text-white transition duration-500 hover:bg-[#CEDAE7] hover:text-[#43699B]"
+          <div
+            class="mt-6 flex flex-col items-center justify-center space-y-4 md:mt-0 md:w-5/12 md:items-start md:text-left"
           >
-            ESTUDIOS
-            <i class="bi bi-arrow-right ml-2"></i>
-          </a>
+            <p class="w-full max-w-full text-center text-[#43699B] md:max-w-md md:text-left">
+              Centro educativo concertado en Palma que ofrece ESO, Bachillerato, FP y programas internacionales como
+              Erasmus+. Promovemos el desarrollo integral con valores, tecnología e inclusión.
+            </p>
+            <a
+              href="#"
+              class="w-full max-w-xs rounded-full bg-[#92092B] px-6 py-3 text-center text-xs text-white transition duration-500 hover:bg-[#CEDAE7] hover:text-[#43699B] md:w-fit md:text-left"
+            >
+              ESTUDIOS
+              <i class="bi bi-arrow-right ml-2"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="col-span-12 mb-6 mt-12 text-center">
-          <h2 class="text-4xl font-semibold uppercase text-[#43699B]">Oferta educativa destacada</h2>
+        <div class="text-center">
+          <h2 class="text-2xl font-semibold uppercase text-[#43699B] md:text-4xl">Oferta educativa destacada</h2>
         </div>
 
-        <div class="col-span-11 col-start-2 mt-12 overflow-hidden px-4">
+        <div class="w-full overflow-hidden px-4">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper flex items-center">
-              <div class="swiper-slide relative h-[532px] w-[344px] flex-shrink-0 overflow-hidden rounded-lg">
+              <div class="swiper-slide relative h-[532px] w-full flex-shrink-0 overflow-hidden rounded-lg md:w-[344px]">
                 <img
                   src="public/picture/desktop/HomePage-Erasmus.webp"
                   class="h-full w-full object-cover"
@@ -472,7 +475,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide relative h-[532px] w-[344px] flex-shrink-0 overflow-hidden rounded-lg">
+              <div class="swiper-slide relative h-[532px] w-full flex-shrink-0 overflow-hidden rounded-lg md:w-[344px]">
                 <img
                   src="public/picture/desktop/HomePage-BachilleratoDual.avif"
                   class="h-full w-full object-cover"
@@ -492,7 +495,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide relative h-[532px] w-[344px] flex-shrink-0 overflow-hidden rounded-lg">
+              <div class="swiper-slide relative h-[532px] w-full flex-shrink-0 overflow-hidden rounded-lg md:w-[344px]">
                 <img
                   src="public/picture/desktop/HomePage-google-education.png"
                   class="h-full w-full object-cover"
@@ -511,7 +514,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide relative h-[532px] w-[344px] flex-shrink-0 overflow-hidden rounded-lg">
+              <div class="swiper-slide relative h-[532px] w-full flex-shrink-0 overflow-hidden rounded-lg md:w-[344px]">
                 <img
                   src="public/picture/desktop/HomePage-Musica.jpg"
                   class="h-full w-full object-cover"
@@ -528,7 +531,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide relative h-[532px] w-[344px] flex-shrink-0 overflow-hidden rounded-lg">
+              <div class="swiper-slide relative h-[532px] w-full flex-shrink-0 overflow-hidden rounded-lg md:w-[344px]">
                 <img
                   src="public/picture/desktop/5fbe575c45e5a435772631.jpg"
                   class="h-full w-full object-cover"
@@ -545,7 +548,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide relative h-[532px] w-[344px] flex-shrink-0 overflow-hidden rounded-lg">
+              <div class="swiper-slide relative h-[532px] w-full flex-shrink-0 overflow-hidden rounded-lg md:w-[344px]">
                 <img
                   src="public/picture/desktop/HomePage-Deportivo.jpg"
                   class="h-full w-full object-cover"
@@ -563,7 +566,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide relative h-[532px] w-[344px] flex-shrink-0 overflow-hidden rounded-lg">
+              <div class="swiper-slide relative h-[532px] w-full flex-shrink-0 overflow-hidden rounded-lg md:w-[344px]">
                 <img
                   src="public/picture/desktop/HomePage-Informacion.jpg"
                   class="h-full w-full object-cover"
