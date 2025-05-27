@@ -85,3 +85,31 @@ if (window.innerWidth < 768) {
 /**
  * TERNINA ALERT CAROUSEL
  */
+
+/**
+ * STICKY NAVBAR
+ */
+
+// Al cargar la página, aplicar el enlace activo desde localStorage
+/**
+ * document.addEventListener("DOMContentLoaded", () => {
+  const activeHref = localStorage.getItem("activeLink");
+  if (activeHref) {
+    const links = document.querySelectorAll(".navbar__list a, #mobile-menu a");
+    links.forEach((link) => {
+      if (link.href === activeHref) {
+        link.classList.add("active-link");
+      }
+    });
+  }
+
+  // Guardar el href del enlace clicado
+  const allLinks = document.querySelectorAll(".navbar__list a, #mobile-menu a");
+  allLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      localStorage.setItem("activeLink", link.href);
+    });
+  });
+});
+
+ */
