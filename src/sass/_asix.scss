@@ -1,0 +1,34 @@
+
+:root {
+    --asix-color: #fff;
+    --iconos-color: #fff;
+    --texto-color-iconos: #fff;
+}
+.container__section-asix {
+    background: linear-gradient(#000B, #000B), url(../../public/picture/desktop/hombre-joven-que-mira-el-tiro-medio-del-probador-de-fibra-optica.jpg) no-repeat center / cover;
+}
+
+.iconos {
+    color: var(--iconos-color);
+    font-size: 2rem;
+}
+
+/*
+    NAVBAR STICKY
+*/
+
+#sticky-navbar {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+  }
+  
+  /* Navbar visible */
+  #sticky-navbar.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+/**/
+/* Estado inicial: texto invisible y desplazado a la izquierda */
+/* Animaciones iniciales para el scroll */
+
