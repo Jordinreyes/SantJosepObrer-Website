@@ -396,50 +396,58 @@
         </nav>
       </header>
 
-      <div class="flex h-screen items-center justify-start px-6">
-        <div class="w-full max-w-3xl text-left">
-          <h1 class="text-(--asix-color) mb-6 text-4xl font-bold">
-            FP Grado Superior en Administración de Sistemas Informáticos en Redes
-          </h1>
-          <p class="text-(--asix-color) mb-8 text-lg">
-            Aquí encontrarás toda la información sobre nuestros programas, valores y cómo formar parte de nuestra
-            comunidad educativa.
-          </p>
-          <p class="text-(--asix-color) mb-8 text-lg">
-            Una formación innovadora en el ámbito de la tecnología, que integra una perspectiva empresarial y de
-            gestión, junto con especializaciones que marcan la diferencia en el mundo laboral.
-          </p>
+      <article class="flex w-1/2 flex-col justify-start self-center px-8">
+        <h1 class="text-(--asix-color) mb-6 text-4xl font-bold">
+          FP Grado Superior en Administración de Sistemas Informáticos en Redes
+        </h1>
+        <p class="text-(--asix-color) mb-8 text-lg">
+          Aquí encontrarás toda la información sobre nuestros programas, valores y cómo formar parte de nuestra
+          comunidad educativa.
+        </p>
+        <p class="text-(--asix-color) mb-8 text-lg">
+          Una formación innovadora en el ámbito de la tecnología, que integra una perspectiva empresarial y de gestión,
+          junto con especializaciones que marcan la diferencia en el mundo laboral.
+        </p>
 
-          <div class="borderp-4 flex flex-row gap-4 rounded-lg shadow-sm">
-            <div class="flex flex-col items-center text-center">
-              <i class="bi bi-file-earmark-post iconos"></i>
-              <span class="text-(--texto-color-iconos) text-sm font-medium">Presencial</span>
-            </div>
-            <div class="flex flex-col items-center text-center">
-              <i class="bi bi-calendar3 iconos"></i>
-              <span class="text-(--texto-color-iconos) text-sm font-medium">2 Años</span>
-            </div>
-            <div class="flex flex-col items-center text-center">
-              <i class="bi bi-clock iconos"></i>
-              <span class="text-(--texto-color-iconos) text-sm font-medium">2000 horas</span>
-            </div>
-            <div class="flex flex-col items-center text-center">
-              <i class="bi bi-calendar4 iconos"></i>
-              <span class="text-(--texto-color-iconos) text-sm font-medium">SEP 2025</span>
-            </div>
-            <div class="flex flex-col items-center text-center">
-              <i class="bi bi-translate iconos"></i>
-              <span class="text-(--texto-color-iconos) text-sm font-medium">Español</span>
-            </div>
+        <div class="borderp-4 flex flex-row gap-4 rounded-lg shadow-sm">
+          <div class="flex flex-col items-center text-center">
+            <i class="bi bi-file-earmark-post iconos"></i>
+            <span class="text-(--texto-color-iconos) text-sm font-medium">Presencial</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <i class="bi bi-calendar3 iconos"></i>
+            <span class="text-(--texto-color-iconos) text-sm font-medium">2 Años</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <i class="bi bi-clock iconos"></i>
+            <span class="text-(--texto-color-iconos) text-sm font-medium">2000 horas</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <i class="bi bi-calendar4 iconos"></i>
+            <span class="text-(--texto-color-iconos) text-sm font-medium">SEP 2025</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <i class="bi bi-translate iconos"></i>
+            <span class="text-(--texto-color-iconos) text-sm font-medium">Español</span>
           </div>
         </div>
-      </div>
+      </article>
+
+      <article class="flex w-1/2 items-center justify-center lg:ml-8 lg:mr-4">
+        <div class="overflow-hidden rounded-xl shadow-lg" style="width: 344px; height: 555px">
+          <img
+            src="public/picture/desktop/mujer-en-un-laboratorio-moderno-usando-un-portatil-para-escribir-lineas-de-codigo-para-aplicaciones-de-ia.jpg"
+            alt="Hombre joven mirando el probador de fibra óptica"
+            class="h-full w-full rounded-xl object-cover"
+          />
+        </div>
+      </article>
     </section>
 
     <main class="main min-h-dvh" id="main">
       <nav
         id="sticky-navbar"
-        class="navbar-bottom justify-left flex gap-8 bg-black p-4 text-white transition-all duration-300"
+        class="navbar-bottom justify-left z-100 flex gap-8 bg-black p-4 text-white transition-all duration-300"
       >
         <ul class="flex gap-6">
           <li><a href="#presentacion" class="hover:underline">PRESENTACION</a></li>
@@ -448,9 +456,9 @@
         </ul>
       </nav>
 
-      <section class="flex min-h-dvh px-8 py-8" id="presentacion">
-        <article class="flex w-1/2 flex-col justify-center pr-8" style="height: 100dvh">
-          <h2 class="mb-6 text-left text-4xl font-bold">
+      <section class="flex min-h-dvh bg-[#F0F8F9]" id="presentacion">
+        <article class="flex w-1/2 flex-col justify-center px-6 pt-10">
+          <h2 class="mb-10 text-left text-4xl font-bold">
             Presentación del Grado Superior en Administración de Sistemas Informáticos en Redes
           </h2>
           <hr class="mb-6 h-1 w-24 rounded border-0 bg-black" />
@@ -470,10 +478,10 @@
           </p>
         </article>
 
-        <article class="flex w-1/2 items-center justify-center" style="height: 100dvh">
+        <article class="flex w-1/2 items-center justify-center px-6">
           <div class="max-h-[fit-content] self-center overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
             <img
-              src="../../public/picture/desktop/hombre-joven-que-mira-el-tiro-medio-del-probador-de-fibra-optica.jpg"
+              src="public/picture/desktop/portatil-en-el-cual-hay-un-mundo-con-personas-dibujadas.jpg"
               alt="Hombre joven mirando el probador de fibra óptica"
               class="max-h-full w-auto rounded-lg object-cover"
             />
@@ -481,16 +489,13 @@
         </article>
       </section>
 
-      <section id="razones" class="flex min-h-dvh flex-col items-center bg-white px-8 py-12">
-        <h2
-          class="mx-auto mb-2 max-w-6xl text-left text-4xl font-bold leading-relaxed"
-          style="word-break: keep-all; hyphens: auto"
-        >
+      <section id="razones" class="justify-centerpx-4 flex min-h-dvh flex-col items-center py-20 text-center">
+        <h2 class="mb-2 max-w-4xl text-4xl font-bold leading-relaxed" style="word-break: keep-all; hyphens: auto">
           Razones por las que estudiar el Grado Superior en Administración de Sistemas Informáticos en Redes
         </h2>
-        <hr class="mx-auto mb-12 mt-12 w-[30rem] rounded border-t-4 border-black" />
+        <hr class="mb-12 mt-8 w-[30rem] rounded border-t-4 border-black" />
 
-        <div class="grid w-full max-w-6xl grid-cols-1 gap-8 text-center sm:grid-cols-2 md:grid-cols-3">
+        <div class="grid w-full max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
           <div class="flex flex-col justify-center rounded-lg border p-6 shadow-md">
             <h3 class="mb-2 text-xl font-semibold">A tu medida</h3>
             <p class="text-sm leading-relaxed">
@@ -534,8 +539,8 @@
         </div>
       </section>
 
-      <section id="plan-estudio" class="mx-auto flex min-h-[100dvh] max-w-7xl gap-12 px-8 py-12">
-        <article class="flex w-1/2 flex-col justify-start">
+      <section id="plan-estudio" class="flex min-h-dvh bg-[#F0F8F9]">
+        <article class="flex w-1/2 flex-col justify-start overflow-y-auto px-8 py-16">
           <h2 class="mb-6 text-left text-4xl font-bold leading-relaxed">
             Plan de estudios del Grado Superior en Administración de Sistemas Informáticos en Redes
           </h2>
@@ -550,18 +555,19 @@
           >
             <div class="flex items-center justify-between">
               <span class="text-lg font-semibold">Primer curso</span>
-              <span id="modal-icon-1" class="text-2xl font-bold">+</span>
+              <span id="modal-icon-2" class="text-2xl font-bold">+</span>
             </div>
 
             <div
-              id="contenido-expandible-1"
+              id="contenido-expandible-2"
               class="mt-4 opacity-0 transition-opacity duration-300"
               style="pointer-events: none"
             >
               <p class="mb-4 text-justify leading-relaxed">
-                Configurar, administrar y mantener sistemas informáticos, garantizando la funcionalidad, integridad de
-                los recursos y servicios del sistema, con la calidad exigida y cumpliendo la reglamentación vigente.
-                Ámbito profesional y de trabajo
+                Administrar y optimizar sistemas informáticos y redes, garantizando seguridad, rendimiento y
+                disponibilidad. Aplicar herramientas avanzadas para la gestión, monitorización y resolución de
+                incidencias. Prácticas profesionales: 500 horas en empresas, poniendo en práctica los conocimientos
+                técnicos en entornos reales.
               </p>
               <table class="w-full border-collapse text-left text-sm">
                 <thead>
@@ -569,82 +575,69 @@
                     <th class="border p-2">Asignatura</th>
                     <th class="border p-2">Semestre</th>
                     <th class="border p-2">Tipo</th>
-                    <th class="border p-2">ECTS</th>
+                    <th class="border p-2">Horas</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="border p-2">Estadística Aplicada a la Analítica de Datos</td>
+                    <td class="border p-2">Implantación de sistema operatico</td>
                     <td class="border p-2">1º</td>
-                    <td class="border p-2">Básica</td>
-                    <td class="border p-2">6</td>
-                  </tr>
-                  <tr>
-                    <td class="border p-2">Álgebra</td>
-                    <td class="border p-2">1º</td>
-                    <td class="border p-2">Básica</td>
-                    <td class="border p-2">6</td>
-                  </tr>
-                  <tr>
-                    <td class="border p-2">Cálculo</td>
-                    <td class="border p-2">1º</td>
-                    <td class="border p-2">Básica</td>
-                    <td class="border p-2">6</td>
-                  </tr>
-                  <tr>
-                    <td class="border p-2">Fundamentos de la Programación</td>
-                    <td class="border p-2">1º</td>
-                    <td class="border p-2">Básica</td>
-                    <td class="border p-2">6</td>
-                  </tr>
-                  <tr>
-                    <td class="border p-2">Organización y gestión de empresas</td>
-                    <td class="border p-2">1º</td>
-                    <td class="border p-2">Básica</td>
-                    <td class="border p-2">6</td>
-                  </tr>
-                  <tr>
-                    <td class="border p-2">Física</td>
-                    <td class="border p-2">2º</td>
-                    <td class="border p-2">Básica</td>
-                    <td class="border p-2">6</td>
-                  </tr>
-                  <tr>
-                    <td class="border p-2">Creatividad e Innovación en entornos digitales</td>
-                    <td class="border p-2">2º</td>
                     <td class="border p-2">Obligatoria</td>
-                    <td class="border p-2">6</td>
+                    <td class="border p-2">190</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">Metodologías de la Programación</td>
-                    <td class="border p-2">2º</td>
-                    <td class="border p-2">Básica</td>
-                    <td class="border p-2">6</td>
+                    <td class="border p-2">Planificación y administración de redes</td>
+                    <td class="border p-2">1º</td>
+                    <td class="border p-2">Obligatoria</td>
+                    <td class="border p-2">170</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">Sistema de Información en una empresa</td>
-                    <td class="border p-2">2º</td>
-                    <td class="border p-2">Básica</td>
-                    <td class="border p-2">6</td>
+                    <td class="border p-2">Fundamentos del hardware</td>
+                    <td class="border p-2">1º</td>
+                    <td class="border p-2">Obligatoria</td>
+                    <td class="border p-2">90</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">Inglés de Negocios</td>
-                    <td class="border p-2">2º</td>
-                    <td class="border p-2">Básica</td>
-                    <td class="border p-2">6</td>
+                    <td class="border p-2">Gestion de base de datos</td>
+                    <td class="border p-2">1º</td>
+                    <td class="border p-2">Obligatoria</td>
+                    <td class="border p-2">170</td>
+                  </tr>
+                  <tr>
+                    <td class="border p-2">Lenguajes de marca</td>
+                    <td class="border p-2">1º</td>
+                    <td class="border p-2">Obligatoria</td>
+                    <td class="border p-2">170</td>
+                  </tr>
+                  <tr>
+                    <td class="border p-2">Digitalización aplicada al sector productivo</td>
+                    <td class="border p-2">1º</td>
+                    <td class="border p-2">Obligatoria</td>
+                    <td class="border p-2">30</td>
+                  </tr>
+                  <tr>
+                    <td class="border p-2">Itenerario personal para la empleabilidad</td>
+                    <td class="border p-2">1º</td>
+                    <td class="border p-2">Obligatoria</td>
+                    <td class="border p-2">90</td>
+                  </tr>
+                  <tr>
+                    <td class="border p-2">Horario reservado para el modulo en ingles</td>
+                    <td class="border p-2">1º</td>
+                    <td class="border p-2">Obligatoria</td>
+                    <td class="border p-2">70</td>
                   </tr>
                 </tbody>
                 <tfoot>
                   <tr>
                     <td class="border p-2 font-semibold" colspan="3">Créditos totales</td>
-                    <td class="border p-2 font-semibold">60</td>
+                    <td class="border p-2 font-semibold">980</td>
                   </tr>
                 </tfoot>
               </table>
             </div>
           </div>
 
-          <!-- Modal 2 - Segundo curso -->
           <div
             id="modal-expandible-2"
             class="mb-6 cursor-pointer select-none rounded-lg border p-4 shadow-md"
@@ -675,82 +668,69 @@
                     <th class="border p-2">Asignatura</th>
                     <th class="border p-2">Semestre</th>
                     <th class="border p-2">Tipo</th>
-                    <th class="border p-2">ECTS</th>
+                    <th class="border p-2">Horas</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="border p-2">Estadística Aplicada a la Analítica de Datos</td>
-                    <td class="border p-2">1º</td>
-                    <td class="border p-2">Básica</td>
-                    <td class="border p-2">6</td>
-                  </tr>
-                  <tr>
-                    <td class="border p-2">Álgebra</td>
-                    <td class="border p-2">1º</td>
-                    <td class="border p-2">Básica</td>
-                    <td class="border p-2">6</td>
-                  </tr>
-                  <tr>
-                    <td class="border p-2">Cálculo</td>
-                    <td class="border p-2">1º</td>
-                    <td class="border p-2">Básica</td>
-                    <td class="border p-2">6</td>
-                  </tr>
-                  <tr>
-                    <td class="border p-2">Fundamentos de la Programación</td>
-                    <td class="border p-2">1º</td>
-                    <td class="border p-2">Básica</td>
-                    <td class="border p-2">6</td>
-                  </tr>
-                  <tr>
-                    <td class="border p-2">Organización y gestión de empresas</td>
-                    <td class="border p-2">1º</td>
-                    <td class="border p-2">Básica</td>
-                    <td class="border p-2">6</td>
-                  </tr>
-                  <tr>
-                    <td class="border p-2">Física</td>
-                    <td class="border p-2">2º</td>
-                    <td class="border p-2">Básica</td>
-                    <td class="border p-2">6</td>
-                  </tr>
-                  <tr>
-                    <td class="border p-2">Creatividad e Innovación en entornos digitales</td>
+                    <td class="border p-2">Administración de sistema operativo</td>
                     <td class="border p-2">2º</td>
                     <td class="border p-2">Obligatoria</td>
-                    <td class="border p-2">6</td>
+                    <td class="border p-2">125</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">Metodologías de la Programación</td>
+                    <td class="border p-2">Servicios de red e internet</td>
                     <td class="border p-2">2º</td>
-                    <td class="border p-2">Básica</td>
-                    <td class="border p-2">6</td>
+                    <td class="border p-2">Obligatoria</td>
+                    <td class="border p-2">125</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">Sistema de Información en una empresa</td>
+                    <td class="border p-2">Empresa e iniciativa emprededora</td>
                     <td class="border p-2">2º</td>
-                    <td class="border p-2">Básica</td>
-                    <td class="border p-2">6</td>
+                    <td class="border p-2">Obligatoria</td>
+                    <td class="border p-2">60</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">Inglés de Negocios</td>
+                    <td class="border p-2">Implantación de aplicación web</td>
                     <td class="border p-2">2º</td>
-                    <td class="border p-2">Básica</td>
-                    <td class="border p-2">6</td>
+                    <td class="border p-2">Obligatoria</td>
+                    <td class="border p-2">134</td>
+                  </tr>
+                  <tr>
+                    <td class="border p-2">Administración de sistema de gestores gbd</td>
+                    <td class="border p-2">2º</td>
+                    <td class="border p-2">Obligatoria</td>
+                    <td class="border p-2">60</td>
+                  </tr>
+                  <tr>
+                    <td class="border p-2">seguridad y alta disponibilidad</td>
+                    <td class="border p-2">2º</td>
+                    <td class="border p-2">Obligatoria</td>
+                    <td class="border p-2">95</td>
+                  </tr>
+                  <tr>
+                    <td class="border p-2">Proyecto de administración de sistema informatico</td>
+                    <td class="border p-2">2º</td>
+                    <td class="border p-2">Obligatoria</td>
+                    <td class="border p-2">55</td>
+                  </tr>
+                  <tr>
+                    <td class="border p-2">Practicas</td>
+                    <td class="border p-2">2º</td>
+                    <td class="border p-2">Obligatorias</td>
+                    <td class="border p-2">500</td>
                   </tr>
                 </tbody>
                 <tfoot>
                   <tr>
                     <td class="border p-2 font-semibold" colspan="3">Créditos totales</td>
-                    <td class="border p-2 font-semibold">60</td>
+                    <td class="border p-2 font-semibold">1020</td>
                   </tr>
                 </tfoot>
               </table>
             </div>
           </div>
 
-          <!-- Modal 3 - Tercer curso -->
           <div
             id="modal-expandible-3"
             class="mb-6 cursor-pointer select-none rounded-lg border p-4 shadow-md"
@@ -770,17 +750,14 @@
               style="pointer-events: none"
             >
               <p class="mb-4 text-justify leading-relaxed">
-                Si buscas cambiar de universidad, ya sea procedente de otra o en búsqueda de un título universitario, y
-                has finalizado un FP de Grado Superior en Administración de Sistemas Informáticos en Red, puedes
-                solicitar el reconocimiento de créditos para tus estudios. Esta formación está especialmente recomendada
-                para alumnos con estudios previos como Técnicos Superiores en: Administración de Sistemas Informáticos,
-                Administración de Sistemas Informáticos en Red, Desarrollo de Aplicaciones Informáticas, Desarrollo de
-                Aplicaciones Multiplataforma y Desarrollo de Aplicaciones Web.
+                Si vienes de un ciclo formativo de Grado Medio o ya cuentas con un Grado Superior relacionado, puedes
+                acceder a esta formación con la posibilidad de convalidar asignaturas de forma gratuita. Está
+                especialmente recomendada para perfiles con estudios previos en áreas como sistemas informáticos,
+                desarrollo de aplicaciones o administración de redes.
               </p>
             </div>
           </div>
 
-          <!-- Modal 4 - Cuarto curso -->
           <div
             id="modal-expandible-4"
             class="mb-6 cursor-pointer select-none rounded-lg border p-4 shadow-md"
@@ -815,48 +792,96 @@
           </div>
         </article>
 
-        <article class="flex w-1/2 flex-col justify-start px-6">
-          <h3 class="mb-6 text-left text-3xl font-bold">Solicitar Información</h3>
-          <form class="flex max-w-md flex-col gap-4" id="info-form" novalidate>
-            <input
-              type="text"
-              name="nombre"
-              placeholder="Nombre"
-              required
-              class="rounded border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
-            />
-            <input
-              type="text"
-              name="apellido"
-              placeholder="Apellido"
-              required
-              class="rounded border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
-            />
-            <input
-              type="email"
-              name="correo"
-              placeholder="Correo electrónico"
-              required
-              class="rounded border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
-            />
-            <input
-              type="tel"
-              name="telefono"
-              placeholder="Número de teléfono"
-              required
-              class="rounded border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
-            />
-            <textarea
-              name="mensaje"
-              rows="4"
-              placeholder="Pedir información"
-              required
-              class="resize-none rounded border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
-            ></textarea>
-            <button type="submit" class="rounded bg-black py-2 font-semibold text-white transition hover:bg-gray-900">
-              Enviar
-            </button>
-          </form>
+        <article class="relative flex w-1/2 flex-col items-center justify-start px-6 py-16">
+          <div
+            class="sticky top-16 w-full max-w-md rounded-2xl border border-gray-200 bg-white/80 p-8 shadow-xl backdrop-blur-lg"
+          >
+            <h3 class="mb-6 text-center text-3xl font-bold text-gray-900">Solicitar Información</h3>
+            <form class="flex flex-col gap-4" id="info-form" novalidate>
+              <input
+                type="text"
+                name="nombre"
+                placeholder="Nombre"
+                required
+                class="rounded-lg border border-gray-300 px-4 py-2 shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black"
+              />
+              <input
+                type="text"
+                name="apellido"
+                placeholder="Apellido"
+                required
+                class="rounded-lg border border-gray-300 px-4 py-2 shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black"
+              />
+              <input
+                type="email"
+                name="correo"
+                placeholder="Correo electrónico"
+                required
+                class="rounded-lg border border-gray-300 px-4 py-2 shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black"
+              />
+              <input
+                type="tel"
+                name="telefono"
+                placeholder="Número de teléfono"
+                required
+                class="rounded-lg border border-gray-300 px-4 py-2 shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black"
+              />
+              <textarea
+                name="mensaje"
+                rows="4"
+                placeholder="Pedir información"
+                required
+                class="resize-none rounded-lg border border-gray-300 px-4 py-2 shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black"
+              ></textarea>
+              <button
+                type="submit"
+                class="mt-2 rounded-lg bg-gradient-to-r from-black to-gray-800 py-2 text-lg font-semibold text-white shadow-md transition hover:from-gray-800 hover:to-black"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+        </article>
+      </section>
+
+      <section id="admision" class="relative flex min-h-[80vh] items-center justify-center bg-white px-6 py-12">
+        <article class="w-full max-w-7xl text-center">
+          <h1 class="text-(--color-admision) mb-4 text-4xl font-bold">
+            Admisión y Condiciones del Grado Superior en Administración de Sistemas Informáticos en Redes
+          </h1>
+          <hr class="mx-auto mb-10 w-24 border-t-4 border-gray-300" />
+
+          <div
+            class="flex flex-col gap-8 text-left text-lg text-gray-800 md:flex-row md:items-start md:justify-between"
+          >
+            <!-- Paso 1 -->
+            <div class="flex-1 space-y-4 px-4">
+              <h2 class="text-xl font-semibold">1. Solicita información</h2>
+              <p>
+                Inicia tu proceso de admisión llamando al
+                <strong>+34 919 032 201</strong>
+                o solicita información a través de nuestro formulario y nuestros asesores se pondrán en contacto
+                contigo.
+              </p>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="flex-1 space-y-4 px-4">
+              <h2 class="text-xl font-semibold">2. Envío de documentación</h2>
+              <p>Envía la documentación requerida a tu asesor personal:</p>
+              <ul class="list-inside list-disc">
+                <li>Documento legal de acceso a la titulación elegida</li>
+                <li>Fotocopia de tu DNI</li>
+                <li>Curriculum vitae</li>
+              </ul>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="flex-1 space-y-4 px-4">
+              <h2 class="text-xl font-semibold">3. Admisión y matriculación</h2>
+              <p>Si la evaluación es favorable, podrás realizar el pago de tu reserva de plaza para asegurarla.</p>
+            </div>
+          </div>
         </article>
       </section>
     </main>

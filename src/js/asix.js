@@ -66,21 +66,42 @@ window.addEventListener("DOMContentLoaded", () => {
 document.querySelectorAll('[id^="modal-expandible-"]').forEach((modal) => {
   modal.addEventListener("click", () => {
     const expanded = modal.getAttribute("aria-expanded") === "true";
+
+    // Cerrar todos los modales antes de abrir uno nuevo
+    document.querySelectorAll('[id^="modal-expandible-"]').forEach((otherModal) => {
+      const otherContenido = otherModal.querySelector('[id^="contenido-expandible-"]');
+      const otherIcon = otherModal.querySelector('[id^="modal-icon-"]');
+      if (otherModal !== modal) {
+        otherModal.setAttribute("aria-expanded", "false");
+        otherModal.style.maxHeight = "56px";
+        otherContenido.style.opacity = 0;
+        otherContenido.style.pointerEvents = "none";
+        otherIcon.textContent = "+";
+      }
+    });
+
+    // Toggle actual
     const contenido = modal.querySelector('[id^="contenido-expandible-"]');
     const icon = modal.querySelector('[id^="modal-icon-"]');
 
     if (expanded) {
+      // Cerrar el modal si ya estaba abierto
       modal.setAttribute("aria-expanded", "false");
       modal.style.maxHeight = "56px";
       contenido.style.opacity = 0;
       contenido.style.pointerEvents = "none";
       icon.textContent = "+";
     } else {
+      // Abrir el modal
       modal.setAttribute("aria-expanded", "true");
-      modal.style.maxHeight = "1000px"; // o el máximo que necesites
+      modal.style.maxHeight = "1000px"; // máximo alto para expandir, ajusta si quieres
       contenido.style.opacity = 1;
       contenido.style.pointerEvents = "auto";
       icon.textContent = "−";
     }
   });
 });
+
+/**
+ * formulario de contacto
+ */

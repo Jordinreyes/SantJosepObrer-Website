@@ -1,0 +1,153 @@
+<div
+  id="modal-expandible-2"
+  class="mb-6 cursor-pointer select-none rounded-lg border p-4 shadow-md"
+  aria-expanded="false"
+  role="button"
+  tabindex="0"
+  style="overflow: hidden; max-height: 56px; transition: max-height 0.4s ease"
+>
+  <div class="flex items-center justify-between">
+    <span class="text-lg font-semibold">Segundo curso</span>
+    <span id="modal-icon-2" class="text-2xl font-bold">+</span>
+  </div>
+
+  <div id="contenido-expandible-2" class="mt-4 opacity-0 transition-opacity duration-300" style="pointer-events: none">
+    <p class="mb-4 text-justify leading-relaxed">
+      Administrar y optimizar sistemas informáticos y redes, garantizando seguridad, rendimiento y disponibilidad.
+      Aplicar herramientas avanzadas para la gestión, monitorización y resolución de incidencias. Prácticas
+      profesionales: 500 horas en empresas, poniendo en práctica los conocimientos técnicos en entornos reales.
+    </p>
+    <table class="w-full border-collapse text-left text-sm">
+      <thead>
+        <tr class="bg-gray-200">
+          <th class="border p-2">Asignatura</th>
+          <th class="border p-2">Semestre</th>
+          <th class="border p-2">Tipo</th>
+          <th class="border p-2">ECTS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border p-2">Estadística Aplicada a la Analítica de Datos</td>
+          <td class="border p-2">1º</td>
+          <td class="border p-2">Básica</td>
+          <td class="border p-2">6</td>
+        </tr>
+        <tr>
+          <td class="border p-2">Álgebra</td>
+          <td class="border p-2">1º</td>
+          <td class="border p-2">Básica</td>
+          <td class="border p-2">6</td>
+        </tr>
+        <tr>
+          <td class="border p-2">Cálculo</td>
+          <td class="border p-2">1º</td>
+          <td class="border p-2">Básica</td>
+          <td class="border p-2">6</td>
+        </tr>
+        <tr>
+          <td class="border p-2">Fundamentos de la Programación</td>
+          <td class="border p-2">1º</td>
+          <td class="border p-2">Básica</td>
+          <td class="border p-2">6</td>
+        </tr>
+        <tr>
+          <td class="border p-2">Organización y gestión de empresas</td>
+          <td class="border p-2">1º</td>
+          <td class="border p-2">Básica</td>
+          <td class="border p-2">6</td>
+        </tr>
+        <tr>
+          <td class="border p-2">Física</td>
+          <td class="border p-2">2º</td>
+          <td class="border p-2">Básica</td>
+          <td class="border p-2">6</td>
+        </tr>
+        <tr>
+          <td class="border p-2">Creatividad e Innovación en entornos digitales</td>
+          <td class="border p-2">2º</td>
+          <td class="border p-2">Obligatoria</td>
+          <td class="border p-2">6</td>
+        </tr>
+        <tr>
+          <td class="border p-2">Metodologías de la Programación</td>
+          <td class="border p-2">2º</td>
+          <td class="border p-2">Básica</td>
+          <td class="border p-2">6</td>
+        </tr>
+        <tr>
+          <td class="border p-2">Sistema de Información en una empresa</td>
+          <td class="border p-2">2º</td>
+          <td class="border p-2">Básica</td>
+          <td class="border p-2">6</td>
+        </tr>
+        <tr>
+          <td class="border p-2">Inglés de Negocios</td>
+          <td class="border p-2">2º</td>
+          <td class="border p-2">Básica</td>
+          <td class="border p-2">6</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td class="border p-2 font-semibold" colspan="3">Créditos totales</td>
+          <td class="border p-2 font-semibold">60</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+
+<div
+  id="modal-expandible-3"
+  class="mb-6 cursor-pointer select-none rounded-lg border p-4 shadow-md"
+  aria-expanded="false"
+  role="button"
+  tabindex="0"
+  style="overflow: hidden; max-height: 56px; transition: max-height 0.4s ease"
+>
+  <div class="flex items-center justify-between">
+    <span class="text-lg font-semibold">Convalidacciones</span>
+    <span id="modal-icon-3" class="text-2xl font-bold">+</span>
+  </div>
+
+  <div id="contenido-expandible-3" class="mt-4 opacity-0 transition-opacity duration-300" style="pointer-events: none">
+    <p class="mb-4 text-justify leading-relaxed">
+      Si buscas cambiar de universidad, ya sea procedente de otra o en búsqueda de un título universitario, y has
+      finalizado un FP de Grado Superior en Administración de Sistemas Informáticos en Red, puedes solicitar el
+      reconocimiento de créditos para tus estudios. Esta formación está especialmente recomendada para alumnos con
+      estudios previos como Técnicos Superiores en: Administración de Sistemas Informáticos, Administración de Sistemas
+      Informáticos en Red, Desarrollo de Aplicaciones Informáticas, Desarrollo de Aplicaciones Multiplataforma y
+      Desarrollo de Aplicaciones Web.
+    </p>
+  </div>
+</div>
+
+<div
+  id="modal-expandible-4"
+  class="mb-6 cursor-pointer select-none rounded-lg border p-4 shadow-md"
+  aria-expanded="false"
+  role="button"
+  tabindex="0"
+  style="overflow: hidden; max-height: 56px; transition: max-height 0.4s ease"
+>
+  <div class="flex items-center justify-between">
+    <span class="text-lg font-semibold">Salidas Profesionales</span>
+    <span id="modal-icon-4" class="text-2xl font-bold">+</span>
+  </div>
+
+  <div id="contenido-expandible-4" class="mt-4 opacity-0 transition-opacity duration-300" style="pointer-events: none">
+    <ul style="list-style-type: disc; padding-left: 20px; margin-left: 0">
+      <li>Responsable de informática</li>
+      <li>Técnico/a en servicios de Internet</li>
+      <li>Técnico/a en servicios de mensajería electrónica</li>
+      <li>Personal de soporte y soporte técnico</li>
+      <li>Técnico en teleasistencia</li>
+      <li>Técnico/a en administración de bases de datos</li>
+      <li>Técnico/a de redes</li>
+      <li>Supervisor de sistemas</li>
+      <li>Técnico/a en servicios de comunicaciones</li>
+      <li>Técnico/a en entornos web</li>
+    </ul>
+  </div>
+</div>
