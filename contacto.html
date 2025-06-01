@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Educación Infantil, Primaria, Bachillerato, Bachillerato Internacional, Formación Profesional, Formación Profesional Dual Intensiva, Erasmus, Sant Josep Obrer, Centro concertado Palma"
+    />
+    <meta
+      name="description"
+      content="Centro concertado en Palma de Mallorca con todas las etapas educativas: Infantil, Primaria, ESO, Bachillerato y Formación Profesional. Educación de calidad, Erasmus+, y atención personalizada."
+    />
+    <meta name="author" content="Jordin Reyes" />
+    <meta property="og:title" content="Colegio Sant Josep Obrer en Palma de Mallorca | Educación de calidad" />
+    <meta
+      property="og:description"
+      content="Centro concertado con Infantil, Primaria, ESO, Bachillerato y FP. Erasmus+, valores, actividades extraescolares e innovación educativa."
+    />
+    <meta property="og:image" content="https://www.santjosepobrer.com/public/logo/image.png" />
+    <meta name="robots" content="index, follow" />
+    <title>Colegio Sant Josep Obrer | Palma de Mallorca</title>
+    <link rel="stylesheet" href="src/app.css" />
+    <link rel="stylesheet" href="src/app.scss" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header
+      class="header z-100 p-(--header-padding) bg-(--bg-color-header) fixed left-0 right-0 top-0 flex w-full items-center justify-between shadow-sm"
+      id="header"
+    >
+      <a href="index.html" class="h-auto max-h-full max-w-[7rem]" title="Logo Sant Josep Obrer">
+        <img src="public/logo/image2.webp" alt="Logo Sant Josep Obrer" class="h-auto w-full" />
+      </a>
+
+      <button id="hamburger" class="z-50 text-3xl text-black focus:outline-none lg:hidden" aria-label="Abrir menú">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <div
+        id="mobile-menu"
+        class="z-100 fixed left-0 top-0 h-full w-full -translate-x-full transform overflow-y-auto bg-white p-6 transition-transform duration-300 ease-in-out lg:hidden"
+      >
+        <div class="mb-6 flex items-center justify-between">
+          <a href="index.html" class="h-auto max-h-full max-w-[7rem]">
+            <img src="public/logo/image.png" alt="Logo Sant Josep Obrer" class="h-auto w-full" />
+          </a>
+          <button id="close-menu" class="text-3xl text-black">
+            <i class="bi bi-x"></i>
+          </button>
+        </div>
+
+        <ul class="flex flex-col space-y-4 text-lg text-black">
+          <li>
+            <div class="submenu-toggle flex w-full items-center justify-between">
+              <a href="estudios.html" class="link-hover-navbar">ESTUDIOS</a>
+              <i class="bi bi-caret-down-fill cursor-pointer"></i>
+            </div>
+            <ul class="mt-2 hidden space-y-2 pl-4">
+              <li>
+                <a
+                  href="innovacion.html"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2"
+                >
+                  Educación Infantil - 1 ciclo
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2">
+                  Educación Infantil - 2 ciclo
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2">
+                  Educación Primaria
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2">
+                  Educación Secundaria Obligatoria
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2">
+                  Formación Profesional Basica
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2">
+                  Bachiller
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2">
+                  Bachiller Dual
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2">
+                  Nuestra FP
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2">
+                  Formación Profesional
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2">
+                  Estudios de Música
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="submenu-toggle flex w-full items-center justify-between">
+              <a href="centros.html" class="link-hover-navbar">CENTROS</a>
+              <i class="bi bi-caret-down-fill cursor-pointer"></i>
+            </div>
+            <ul class="mt-2 hidden space-y-2 pl-4">
+              <li>
+                <a
+                  href="index.html"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2"
+                >
+                  Sant Josep Obrer
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2">
+                  Corpus Christi
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="submenu-toggle flex w-full items-center justify-between">
+              <a href="sjo_internacional.html" class="link-hover-navbar">SJO INTERNACIONAL</a>
+              <i class="bi bi-caret-down-fill cursor-pointer"></i>
+            </div>
+            <ul class="mt-2 hidden space-y-2 pl-4">
+              <li>
+                <a href="#" class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2">
+                  Erasmus +
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2">
+                  Intercambio
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2">
+                  Idiomas
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="submenu-toggle flex w-full items-center justify-between">
+              <a href="extra.html" class="link-hover-navbar">EXTRA</a>
+              <i class="bi bi-caret-down-fill cursor-pointer"></i>
+            </div>
+            <ul class="mt-2 hidden space-y-2 pl-4">
+              <li>
+                <a href="#" class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2">
+                  Música
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2">
+                  Club Deportivo
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2">
+                  Extraescolares
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="innovacion.html" class="link-hover-navbar">INNOVACIÓN</a></li>
+          <li><a href="solidaridad.html" class="link-hover-navbar">SOLIDARIDAD</a></li>
+          <li>
+            <a
+              href="contacto.html"
+              class="bg-(--color-enlace--contact) ml-2 rounded-full px-6 py-3 transition duration-500 hover:bg-[#8B8442]"
+              title="ir al formulario de contacto"
+              id="contactar"
+            >
+              CONTACTAR
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="navbar__header hidden lg:flex" aria-label="Menu principal">
+        <ul class="navbar__list text-size-navbar gap-(--header-gap) mr-[30px] flex">
+          <li class="relative">
+            <button class="submenu-desktop-toggle flex items-center gap-1">
+              <a href="estudios.html" class="link-hover-navbar">ESTUDIOS</a>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <ul class="sombra absolute left-0 z-40 mt-2 hidden w-64 rounded-md bg-white shadow-lg">
+              <li>
+                <a
+                  href="innovacion.html"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
+                >
+                  Educación Infantil - 1 ciclo
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
+                >
+                  Educación Infantil - 2 ciclo
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
+                >
+                  Educación Primaria
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
+                >
+                  Educación Secundaria Obligatoria
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
+                >
+                  Formación Profesional Basica
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
+                >
+                  Bachiller
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
+                >
+                  Bachiller Dual
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
+                >
+                  Nuestra FP
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
+                >
+                  Formación Profesional
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
+                >
+                  Estudios de Música
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="relative">
+            <button class="submenu-desktop-toggle flex items-center gap-1">
+              <a href="centros.html" class="link-hover-navbar">CENTROS</a>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <ul class="sombra absolute left-0 z-40 mt-2 hidden w-64 rounded-md bg-white shadow-lg">
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
+                >
+                  Sant Josep Obrer
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
+                >
+                  Corpus Christi
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="relative">
+            <button class="submenu-desktop-toggle flex items-center gap-1">
+              <a href="sjo_internacional.html" class="link-hover-navbar">SJO INTERNACIONAL</a>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <ul class="sombra absolute left-0 z-40 mt-2 hidden w-64 rounded-md bg-white shadow-lg">
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
+                >
+                  Intercambio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
+                >
+                  Erasmus +
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
+                >
+                  Idiomas
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="relative">
+            <button class="submenu-desktop-toggle flex items-center gap-1">
+              <a href="extra.html" class="link-hover-navbar">EXTRA</a>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <ul class="sombra absolute left-0 z-40 mt-2 hidden w-64 rounded-md bg-white shadow-lg">
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
+                >
+                  Música
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
+                >
+                  Club Deportivo
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
+                >
+                  Extraescolares
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="innovacion.html" class="link-hover-navbar">INNOVACIÓN</a></li>
+          <li><a href="solidaridad.html" class="link-hover-navbar">SOLIDARIDAD</a></li>
+          <li>
+            <a
+              href="contacto.html"
+              class="bg-(--color-enlace--contact) text-(--color-contact) ml-2 rounded-full px-6 py-3 transition duration-500 hover:bg-[#8B8442]"
+              title="ir al formulario de contacto"
+              id="contactar"
+            >
+              CONTACTAR
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main" id="main">
+      <section class="flex h-[100vh] flex-col px-6 pb-10 pt-[10rem] lg:px-20">
+        <h1 class="mb-6 mt-4 text-center text-6xl font-bold tracking-wider">Contáctanos</h1>
+
+        <div class="flex flex-1 flex-col gap-6 lg:flex-row">
+          <article class="flex w-full flex-col justify-center lg:w-1/2">
+            <form class="flex h-full flex-col justify-center gap-4 rounded-2xl p-6">
+              <input type="text" placeholder="Nombre" class="rounded border border-gray-300 p-3 focus:outline-none" />
+              <input type="email" placeholder="Email" class="rounded border border-gray-300 p-3 focus:outline-none" />
+              <input type="tel" placeholder="Teléfono" class="rounded border border-gray-300 p-3 focus:outline-none" />
+              <textarea
+                rows="4"
+                placeholder="Mensaje"
+                class="rounded border border-gray-300 p-3 focus:outline-none"
+              ></textarea>
+              <button type="submit" class="rounded bg-black py-3 text-white transition hover:bg-gray-800">
+                Enviar
+              </button>
+            </form>
+          </article>
+
+          <article
+            class="flex h-full w-full flex-col justify-center rounded-2xl bg-[#EAEAEA] p-6 text-base leading-relaxed text-black lg:w-1/2"
+          >
+            <div class="flex flex-col gap-4">
+              <h2 class="text-center text-lg font-bold text-black">IMPORTANTE</h2>
+              <p>
+                Para ser colaborador de nuestra plataforma y formar parte de nuestra comunidad, es importante que
+                compartas nuestra visión de apoyar y empoderar a los diseñadores en su desarrollo profesional. Buscamos
+                personas comprometidas, creativas y con ganas de aportar valor a través de sus habilidades y
+                conocimientos. Como colaborador, te invitamos a participar activamente en la creación de recursos,
+                cursos y contenidos que enriquezcan la experiencia de los diseñadores que nos visitan. Además, es
+                fundamental mantener una comunicación abierta, respetuosa y transparente, asegurando así una
+                colaboración fluida y exitosa. Si compartes nuestra pasión por el diseño y el aprendizaje continuo, ¡nos
+                encantaría contar contigo en nuestro equipo! Contáctanos dejándonos tus datos y explícanos de qué manera
+                te gustaría colaborar con nosotros, te responderemos lo antes posible. ¡Gracias por hacer que esta
+                comunidad crezca cada día más!
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="flex h-[50vh] flex-col items-center justify-center gap-6 px-6 lg:flex-row lg:gap-10 lg:px-20">
+        <div class="flex max-w-sm flex-col items-center rounded-xl bg-[#EAEAEA] p-6 text-center shadow-md">
+          <div class="mb-2 text-3xl"><i class="bi bi-telephone-fill"></i></div>
+          <h3 class="text-lg font-semibold">(+34) 971 473308</h3>
+          <p class="mt-2 text-sm text-gray-700">
+            Si necesitas ponerte en contacto con nosotros de manera rápida y directa, no dudes en llamarnos. Estamos
+            disponibles para resolver cualquier duda o brindarte la asistencia que necesites. ¡Te atenderemos con gusto!
+          </p>
+        </div>
+
+        <div class="flex max-w-sm flex-col items-center rounded-xl bg-[#EAEAEA] p-6 text-center shadow-md">
+          <div class="mb-2 text-3xl"><i class="bi bi-envelope-check-fill"></i></div>
+          <h3 class="text-lg font-semibold">fp@santjosepobrer.es</h3>
+          <p class="mt-2 text-sm text-gray-700">
+            Para consultas más detalladas o si prefieres escribirnos, puedes enviarnos un correo electrónico. Nos
+            aseguraremos de responderte lo antes posible con toda la información que necesitas.
+          </p>
+        </div>
+
+        <div class="flex max-w-sm flex-col items-center rounded-xl bg-[#EAEAEA] p-6 text-center shadow-md">
+          <div class="mb-2 text-3xl"><i class="bi bi-geo-alt-fill"></i></div>
+          <h3 class="text-lg font-semibold">Carrer de Sebastià Arrom, 3-5, Llevant, 07008 Palma, Illes Balears</h3>
+          <p class="mt-2 text-sm text-gray-700">
+            Si deseas visitarnos personalmente, nuestra oficina se encuentra en esta dirección. Estamos ubicados en una
+            zona de fácil acceso, y estaremos encantados de recibirte para conversar sobre nuevas oportunidades de
+            colaboración.
+          </p>
+        </div>
+      </section>
+
+      <section class="h-[60vh] w-full">
+        <div class="h-full w-full overflow-hidden rounded-xl shadow-md">
+          <iframe
+            class="h-full w-full border-0"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d831.9058693662521!2d2.6784289!3d39.5783773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129793a01ac7afef%3A0xbf70a0207a81b466!2sESO%20i%20Batxillerat%20Sant%20Josep%20Obrer!5e0!3m2!1ses!2ses!4v1717262200000!5m2!1ses!2ses"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-(--footer-bg) text-(--footer-color) px-6 pb-4 pt-8">
+      <div class="mb-8 flex flex-col items-center justify-between gap-6 md:flex-row">
+        <div class="mb-4 flex justify-center md:mb-0 md:justify-start">
+          <a href="index.html" class="h-auto max-h-full max-w-[7rem]" title="Logo Sant Josep Obrer">
+            <img src="public/logo/image.png" alt="Logo Sant Josep Obrer" class="h-auto w-full" />
+          </a>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="https://www.instagram.com/sjo_i_cc/" target="_blank" rel="noopener noreferrer">
+            <img
+              src="public/icon/instagram.svg"
+              alt="Instagram"
+              title="Instagram"
+              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 transform rounded-full p-2 transition-transform duration-300 ease-in-out hover:scale-150"
+            />
+          </a>
+          <a href="https://www.instagram.com/sjo_i_cc/" target="_blank" rel="noopener noreferrer">
+            <img
+              src="public/icon/facebook.svg"
+              alt="Facebook"
+              title="Facebook"
+              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 transform rounded-full p-2 transition-transform duration-300 ease-in-out hover:scale-150"
+            />
+          </a>
+          <a href="https://www.youtube.com/channel/UCT9dm1zPiBYj4zQlsdQa4MQ" target="_blank" rel="noopener noreferrer">
+            <img
+              src="public/icon/Logo--youtube.svg"
+              alt="YouTube"
+              title="YouTube"
+              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 transform rounded-full p-2 transition-transform duration-300 ease-in-out hover:scale-150"
+            />
+          </a>
+          <a href="https://www.tiktok.com/@santjosepobrer?lang=es" target="_blank" rel="noopener noreferrer">
+            <img
+              src="public/icon/tiktok.svg"
+              alt="TikTok"
+              title="TikTok"
+              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 transform rounded-full p-2 transition-transform duration-300 ease-in-out hover:scale-150"
+            />
+          </a>
+          <a href="https://x.com/SJO_CC" target="_blank" rel="noopener noreferrer">
+            <img
+              src="public/icon/x.svg"
+              alt="X"
+              title="X"
+              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 transform rounded-full p-2 transition-transform duration-300 ease-in-out hover:scale-150"
+            />
+          </a>
+        </div>
+      </div>
+
+      <nav class="mb-4 hidden flex-wrap gap-x-6 gap-y-4 text-sm md:flex lg:gap-x-12" aria-label="navegacion footer">
+        <a href="estudios.html" class="whitespace-nowrap" title="estudios">
+          ESTUDIOS
+          <i class="bi bi-plus"></i>
+        </a>
+        <a href="centros.html" class="whitespace-nowrap" title="centros">
+          CENTROS
+          <i class="bi bi-plus"></i>
+        </a>
+        <a href="sjo_internacional.html" class="whitespace-nowrap" title="sjo internacional">
+          SJO INTERNACIONAL
+          <i class="bi bi-plus"></i>
+        </a>
+        <a href="extra.html" class="whitespace-nowrap" title="extra">
+          EXTRA
+          <i class="bi bi-plus"></i>
+        </a>
+        <a href="innovacion.html" class="whitespace-nowrap" title="innovacion">
+          INNOVACIÓN
+          <i class="bi bi-plus"></i>
+        </a>
+        <a href="solidaridad.html" class="whitespace-nowrap" title="solidaridad">
+          SOLIDARIDAD
+          <i class="bi bi-plus"></i>
+        </a>
+      </nav>
+
+      <hr class="my-4 border-white/40" />
+
+      <div class="mb-6 flex flex-col items-center justify-between gap-4 text-sm md:flex-row">
+        <a href="contacto.html">
+          <button
+            class="flex items-center gap-2 rounded-full bg-[#b4a998] px-5 py-2 font-medium text-[#fff] transition duration-500 hover:bg-[#8B8442]"
+          >
+            <img src="public/icon/Phone.svg" alt="logo de llamada footer" title="logo de llamada footer" />
+            Contáctanos
+          </button>
+        </a>
+
+        <div class="flex flex-wrap justify-center gap-6">
+          <a href="extra.html" class="hover:underline">Preguntas frecuentes</a>
+          <a href="contacto.html" class="hover:underline">Formulario de contacto</a>
+          <a href="contacto.html" class="hover:underline">Oficina de Sjo</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="src/js/contact.js"></script>
+</html>

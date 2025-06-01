@@ -77,11 +77,7 @@ document.addEventListener("click", (e) => {
 /**
  * ALERT CAROSELL
  */
-if (window.innerWidth < 768) {
-  window.addEventListener("load", function () {
-    alert("Desliza la imagen para ver más contenido educativo.");
-  });
-}
+
 /**
  * TERNINA ALERT CAROUSEL
  */

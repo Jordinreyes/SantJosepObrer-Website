@@ -383,7 +383,7 @@
             <li><a href="solidaridad.html" class="link-hover-navbar">SOLIDARIDAD</a></li>
             <li>
               <a
-                href="contacto.php"
+                href="contacto.html"
                 class="bg-(--color-enlace--contact) ml-2 rounded-full px-6 py-3 transition duration-500 hover:bg-[#8B8442]"
                 title="ir al formulario de contacto"
                 id="contactar"
@@ -658,12 +658,9 @@
     <footer class="bg-(--footer-bg) text-(--footer-color) px-6 pb-4 pt-8">
       <div class="mb-8 flex flex-col items-center justify-between gap-6 md:flex-row">
         <div class="mb-4 flex justify-center md:mb-0 md:justify-start">
-          <img
-            src="public/logo/HomePgae-Logo-Header.png"
-            alt="Logo Sant Josep Obrer Footer"
-            title="Logo Sant Josep Obrer Footer"
-            class="h-16 sm:h-20 md:h-24"
-          />
+          <a href="index.html" class="h-auto max-h-full max-w-[7rem]" title="Logo Sant Josep Obrer">
+            <img src="public/logo/image.png" alt="Logo Sant Josep Obrer" class="h-auto w-full" />
+          </a>
         </div>
 
         <div class="flex flex-wrap justify-center gap-4">
@@ -672,7 +669,7 @@
               src="public/icon/instagram.svg"
               alt="Instagram"
               title="Instagram"
-              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 rounded-full p-2 transition duration-500"
+              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 transform rounded-full p-2 transition-transform duration-300 ease-in-out hover:scale-150"
             />
           </a>
           <a href="https://www.instagram.com/sjo_i_cc/" target="_blank" rel="noopener noreferrer">
@@ -680,7 +677,7 @@
               src="public/icon/facebook.svg"
               alt="Facebook"
               title="Facebook"
-              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 rounded-full p-2 transition duration-500"
+              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 transform rounded-full p-2 transition-transform duration-300 ease-in-out hover:scale-150"
             />
           </a>
           <a href="https://www.youtube.com/channel/UCT9dm1zPiBYj4zQlsdQa4MQ" target="_blank" rel="noopener noreferrer">
@@ -688,7 +685,7 @@
               src="public/icon/Logo--youtube.svg"
               alt="YouTube"
               title="YouTube"
-              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 rounded-full p-2 transition duration-500"
+              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 transform rounded-full p-2 transition-transform duration-300 ease-in-out hover:scale-150"
             />
           </a>
           <a href="https://www.tiktok.com/@santjosepobrer?lang=es" target="_blank" rel="noopener noreferrer">
@@ -696,7 +693,7 @@
               src="public/icon/tiktok.svg"
               alt="TikTok"
               title="TikTok"
-              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 rounded-full p-2 transition duration-500"
+              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 transform rounded-full p-2 transition-transform duration-300 ease-in-out hover:scale-150"
             />
           </a>
           <a href="https://x.com/SJO_CC" target="_blank" rel="noopener noreferrer">
@@ -704,7 +701,7 @@
               src="public/icon/x.svg"
               alt="X"
               title="X"
-              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 rounded-full p-2 transition duration-500"
+              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 transform rounded-full p-2 transition-transform duration-300 ease-in-out hover:scale-150"
             />
           </a>
         </div>
@@ -740,17 +737,19 @@
       <hr class="my-4 border-white/40" />
 
       <div class="mb-6 flex flex-col items-center justify-between gap-4 text-sm md:flex-row">
-        <button
-          class="flex items-center gap-2 rounded-full bg-[#b4a998] px-5 py-2 font-medium text-[#fff] transition duration-500 hover:bg-[#8B8442]"
-        >
-          <img src="public/icon/Phone.svg" alt="logo de llamada footer" title="logo de llamada footer" />
-          Contáctanos
-        </button>
+        <a href="contacto.html">
+          <button
+            class="flex items-center gap-2 rounded-full bg-[#b4a998] px-5 py-2 font-medium text-[#fff] transition duration-500 hover:bg-[#8B8442]"
+          >
+            <img src="public/icon/Phone.svg" alt="logo de llamada footer" title="logo de llamada footer" />
+            Contáctanos
+          </button>
+        </a>
 
         <div class="flex flex-wrap justify-center gap-6">
-          <a href="#" class="hover:underline">Preguntas frecuentes</a>
-          <a href="#" class="hover:underline">Formulario de contacto</a>
-          <a href="#" class="hover:underline">Oficina de turismo</a>
+          <a href="extra.html" class="hover:underline">Preguntas frecuentes</a>
+          <a href="contacto.html" class="hover:underline">Formulario de contacto</a>
+          <a href="contacto.html" class="hover:underline">Oficina de Sjo</a>
         </div>
       </div>
     </footer>

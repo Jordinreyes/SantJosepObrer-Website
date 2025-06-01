@@ -26,7 +26,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <section class="container__section-asix relative flex min-h-dvh items-center justify-center">
+    <section
+      class="container__section-asix relative flex min-h-dvh flex-col items-center justify-center gap-8 px-4 pt-24 lg:flex-row lg:items-center lg:justify-between lg:px-20"
+    >
       <header
         class="header z-100 p-(--header-padding) fixed left-0 right-0 top-0 flex w-full items-center justify-between"
         id="header"
@@ -383,7 +385,7 @@
             <li><a href="solidaridad.html" class="link-hover-navbar">SOLIDARIDAD</a></li>
             <li>
               <a
-                href="contacto.php"
+                href="contacto.html"
                 class="bg-(--color-enlace--contact) ml-2 rounded-full px-6 py-3 transition duration-500 hover:bg-[#8B8442]"
                 title="ir al formulario de contacto"
                 id="contactar"
@@ -395,50 +397,53 @@
           </ul>
         </nav>
       </header>
-
-      <article class="flex w-1/2 flex-col justify-start self-center px-8">
-        <h1 class="text-(--asix-color) mb-6 text-4xl font-bold">
+      <!-- Texto -->
+      <article class="flex w-full max-w-2xl flex-col justify-start text-center lg:w-1/2 lg:text-left">
+        <h1 class="text-(--asix-color) mb-6 text-3xl font-bold md:text-4xl">
           FP Grado Superior en Administración de Sistemas Informáticos en Redes
         </h1>
-        <p class="text-(--asix-color) mb-8 text-lg">
+        <p class="text-(--asix-color) mb-8 text-base md:text-lg">
           Aquí encontrarás toda la información sobre nuestros programas, valores y cómo formar parte de nuestra
           comunidad educativa.
         </p>
-        <p class="text-(--asix-color) mb-8 text-lg">
+        <p class="text-(--asix-color) mb-8 hidden text-base md:text-lg lg:block">
           Una formación innovadora en el ámbito de la tecnología, que integra una perspectiva empresarial y de gestión,
           junto con especializaciones que marcan la diferencia en el mundo laboral.
         </p>
 
-        <div class="borderp-4 flex flex-row gap-4 rounded-lg shadow-sm">
-          <div class="flex flex-col items-center text-center">
-            <i class="bi bi-file-earmark-post iconos"></i>
-            <span class="text-(--texto-color-iconos) text-sm font-medium">Presencial</span>
+        <div
+          class="flex flex-nowrap justify-center gap-4 overflow-x-auto rounded-lg py-4 shadow-sm lg:flex-wrap lg:justify-start"
+        >
+          <div class="flex min-w-[50px] flex-col items-center text-center">
+            <i class="bi bi-file-earmark-post iconos text-sm sm:text-base"></i>
+            <span class="icon-texto text-(--texto-color-iconos) text-xs font-medium sm:text-sm">Presencial</span>
           </div>
-          <div class="flex flex-col items-center text-center">
-            <i class="bi bi-calendar3 iconos"></i>
-            <span class="text-(--texto-color-iconos) text-sm font-medium">2 Años</span>
+          <div class="flex min-w-[50px] flex-col items-center text-center">
+            <i class="bi bi-calendar3 iconos text-sm sm:text-base"></i>
+            <span class="icon-texto text-(--texto-color-iconos) text-xs font-medium sm:text-sm">2 Años</span>
           </div>
-          <div class="flex flex-col items-center text-center">
-            <i class="bi bi-clock iconos"></i>
-            <span class="text-(--texto-color-iconos) text-sm font-medium">2000 horas</span>
+          <div class="flex min-w-[50px] flex-col items-center text-center">
+            <i class="bi bi-clock iconos text-sm sm:text-base"></i>
+            <span class="icon-texto text-(--texto-color-iconos) text-xs font-medium sm:text-sm">2000 horas</span>
           </div>
-          <div class="flex flex-col items-center text-center">
-            <i class="bi bi-calendar4 iconos"></i>
-            <span class="text-(--texto-color-iconos) text-sm font-medium">SEP 2025</span>
+          <div class="flex min-w-[50px] flex-col items-center text-center">
+            <i class="bi bi-calendar4 iconos text-sm sm:text-base"></i>
+            <span class="icon-texto text-(--texto-color-iconos) text-xs font-medium sm:text-sm">SEP 2025</span>
           </div>
-          <div class="flex flex-col items-center text-center">
-            <i class="bi bi-translate iconos"></i>
-            <span class="text-(--texto-color-iconos) text-sm font-medium">Español</span>
+          <div class="flex min-w-[50px] flex-col items-center text-center">
+            <i class="bi bi-translate iconos text-sm sm:text-base"></i>
+            <span class="icon-texto text-(--texto-color-iconos) text-xs font-medium sm:text-sm">Español</span>
           </div>
         </div>
       </article>
 
-      <article class="flex w-1/2 items-center justify-center lg:ml-8 lg:mr-4">
-        <div class="overflow-hidden rounded-xl shadow-lg" style="width: 344px; height: 555px">
+      <!-- Imagen -->
+      <article class="mb-10 flex w-full items-center justify-center pt-6 lg:mb-0 lg:w-1/2 lg:pt-0">
+        <div class="w-full max-w-sm overflow-hidden rounded-xl shadow-lg sm:w-96">
           <img
             src="public/picture/desktop/mujer-en-un-laboratorio-moderno-usando-un-portatil-para-escribir-lineas-de-codigo-para-aplicaciones-de-ia.jpg"
             alt="Hombre joven mirando el probador de fibra óptica"
-            class="h-full w-full rounded-xl object-cover"
+            class="h-auto w-full rounded-xl object-cover"
           />
         </div>
       </article>
@@ -447,7 +452,7 @@
     <main class="main min-h-dvh" id="main">
       <nav
         id="sticky-navbar"
-        class="navbar-bottom justify-left z-100 flex gap-8 bg-black p-4 text-white transition-all duration-300"
+        class="navbar-bottom z-100 flex w-full justify-center bg-black p-4 text-sm text-white transition-all duration-300 sm:justify-start sm:text-base"
       >
         <ul class="flex gap-6">
           <li><a href="#presentacion" class="hover:underline">PRESENTACION</a></li>
@@ -456,13 +461,18 @@
         </ul>
       </nav>
 
-      <section class="flex min-h-dvh bg-[#F0F8F9]" id="presentacion">
-        <article class="flex w-1/2 flex-col justify-center px-6 pt-10">
-          <h2 class="mb-10 text-left text-4xl font-bold">
+      <section
+        class="flex min-h-dvh flex-col items-center bg-[#F0F8F9] px-6 pt-10 lg:flex-row lg:items-center lg:gap-x-16 lg:px-20"
+        id="presentacion"
+      >
+        <article class="flex w-full max-w-4xl flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left">
+          <h2 class="mb-10 text-3xl font-bold lg:text-4xl">
             Presentación del Grado Superior en Administración de Sistemas Informáticos en Redes
           </h2>
-          <hr class="mb-6 h-1 w-24 rounded border-0 bg-black" />
-          <p class="mb-4 text-justify leading-relaxed">
+
+          <hr class="mx-auto mb-6 h-1 w-24 rounded border-0 bg-black lg:mx-0" />
+
+          <p class="mb-4 max-w-3xl leading-relaxed">
             El Grado en Ingeniería Informática en modalidad Online de UNIE sobresale al proporcionar una formación
             integral que va más allá de la mera adquisición de conocimientos teóricos, enfocándose en su aplicación
             efectiva en el ámbito empresarial. En un contexto en el que los desafíos tecnológicos están estrechamente
@@ -470,7 +480,8 @@
             como para la integración de componentes y plataformas, incluyendo soluciones en la nube ampliamente
             adoptadas por las principales empresas.
           </p>
-          <p class="mb-4 text-justify leading-relaxed">
+
+          <p class="mb-4 hidden max-w-3xl leading-relaxed lg:block">
             Adicionalmente, ofrecemos la oportunidad de explorar disciplinas avanzadas, como Digitalización, Blockchain,
             Ciberseguridad e Internet de las Cosas, que en otras instituciones educativas solo se abordan en programas
             de posgrado. Además, podrás optar por dos menciones especializadas: Proyectos Software y Plataformas
@@ -478,8 +489,8 @@
           </p>
         </article>
 
-        <article class="flex w-1/2 items-center justify-center px-6">
-          <div class="max-h-[fit-content] self-center overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
+        <article class="flex w-full justify-center pt-8 lg:w-1/2 lg:pt-0">
+          <div class="max-h-[fit-content] overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
             <img
               src="public/picture/desktop/portatil-en-el-cual-hay-un-mundo-con-personas-dibujadas.jpg"
               alt="Hombre joven mirando el probador de fibra óptica"
@@ -489,147 +500,158 @@
         </article>
       </section>
 
-      <section id="razones" class="justify-centerpx-4 flex min-h-dvh flex-col items-center py-20 text-center">
-        <h2 class="mb-2 max-w-4xl text-4xl font-bold leading-relaxed" style="word-break: keep-all; hyphens: auto">
+      <section id="razones" class="flex min-h-dvh flex-col items-center px-4 py-20 text-center">
+        <h2
+          class="mb-2 max-w-4xl text-2xl font-bold leading-relaxed sm:text-3xl lg:text-4xl"
+          style="word-break: keep-all; hyphens: auto"
+        >
           Razones por las que estudiar el Grado Superior en Administración de Sistemas Informáticos en Redes
         </h2>
-        <hr class="mb-12 mt-8 w-[30rem] rounded border-t-4 border-black" />
 
-        <div class="grid w-full max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
+        <hr class="mx-auto mb-12 mt-8 w-24 rounded border-t-4 border-black sm:w-48 lg:w-[30rem]" />
+
+        <div class="grid w-full max-w-6xl grid-cols-1 gap-8 px-4 sm:grid-cols-2 lg:grid-cols-3 lg:px-0">
           <div class="flex flex-col justify-center rounded-lg border p-6 shadow-md">
-            <h3 class="mb-2 text-xl font-semibold">A tu medida</h3>
-            <p class="text-sm leading-relaxed">
+            <h3 class="mb-2 text-lg font-semibold sm:text-xl">A tu medida</h3>
+            <p class="text-xs leading-relaxed sm:text-sm">
               Estudiar online te ofrece flexibilidad de horarios y ubicación, adaptando el aprendizaje a tus
               necesidades, conciliando trabajo y vida personal.
             </p>
           </div>
           <div class="flex flex-col justify-center rounded-lg border p-6 shadow-md">
-            <h3 class="mb-2 text-xl font-semibold">Formación pionera</h3>
-            <p class="text-sm leading-relaxed">
+            <h3 class="mb-2 text-lg font-semibold sm:text-xl">Formación pionera</h3>
+            <p class="text-xs leading-relaxed sm:text-sm">
               Recibirás una formación completa en Tecnologías de la Información (TI), abarcando Sistemas de la
               Información, Digitalización, Blockchain, IoT y Ciberseguridad.
             </p>
           </div>
           <div class="flex flex-col justify-center rounded-lg border p-6 shadow-md">
-            <h3 class="mb-2 text-xl font-semibold">Enfoques complementarios</h3>
-            <p class="text-sm leading-relaxed">
+            <h3 class="mb-2 text-lg font-semibold sm:text-xl">Enfoques complementarios</h3>
+            <p class="text-xs leading-relaxed sm:text-sm">
               Especializaciones en plataformas Hardware y Arquitecturas de Computación.
             </p>
           </div>
           <div class="flex flex-col justify-center rounded-lg border p-6 shadow-md">
-            <h3 class="mb-2 text-xl font-semibold">Campus Virtual</h3>
-            <p class="text-sm leading-relaxed">
+            <h3 class="mb-2 text-lg font-semibold sm:text-xl">Campus Virtual</h3>
+            <p class="text-xs leading-relaxed sm:text-sm">
               Aprende desde una plataforma intuitiva, accesible desde cualquier dispositivo en la que podrás conectar
               con profesores y compañeros.
             </p>
           </div>
           <div class="flex flex-col justify-center rounded-lg border p-6 shadow-md">
-            <h3 class="mb-2 text-xl font-semibold">Respaldado por la Comunidad Universitaria</h3>
-            <p class="text-sm leading-relaxed">
+            <h3 class="mb-2 text-lg font-semibold sm:text-xl">Respaldado por la Comunidad Universitaria</h3>
+            <p class="text-xs leading-relaxed sm:text-sm">
               Tus profesores Counselor, estarán atentos a tu progresión en aula y fuera de ella para que estés
               acompañado en todo momento.
             </p>
           </div>
           <div class="flex flex-col justify-center rounded-lg border p-6 shadow-md">
-            <h3 class="mb-2 text-xl font-semibold">Título Oficial</h3>
-            <p class="text-sm leading-relaxed">
+            <h3 class="mb-2 text-lg font-semibold sm:text-xl">Título Oficial</h3>
+            <p class="text-xs leading-relaxed sm:text-sm">
               Evaluado favorablemente por la Fundación para el Conocimiento Madri+d.
             </p>
           </div>
         </div>
       </section>
 
-      <section id="plan-estudio" class="flex min-h-dvh bg-[#F0F8F9]">
-        <article class="flex w-1/2 flex-col justify-start overflow-y-auto px-8 py-16">
-          <h2 class="mb-6 text-left text-4xl font-bold leading-relaxed">
+      <section id="plan-estudio" class="flex min-h-dvh flex-col bg-[#F0F8F9] md:flex-row">
+        <article class="flex flex-col justify-start overflow-y-auto px-6 py-12 md:w-1/2 md:px-8 md:py-16">
+          <h2 class="mb-4 text-center text-2xl font-bold leading-relaxed sm:text-3xl md:text-left md:text-4xl">
             Plan de estudios del Grado Superior en Administración de Sistemas Informáticos en Redes
           </h2>
 
+          <hr class="mx-auto mb-8 w-24 border-t-2 border-gray-400 md:mx-0 md:mb-6" />
+
           <div
             id="modal-expandible-1"
-            class="mb-6 cursor-pointer select-none rounded-lg border p-4 shadow-md"
+            class="mx-auto mb-6 max-w-md cursor-pointer select-none overflow-hidden rounded-lg border p-4 shadow-md md:mx-0 md:max-w-none"
             aria-expanded="false"
             role="button"
             tabindex="0"
-            style="overflow: hidden; max-height: 56px; transition: max-height 0.4s ease"
+            style="max-height: 56px; transition: max-height 0.4s ease"
           >
             <div class="flex items-center justify-between">
-              <span class="text-lg font-semibold">Primer curso</span>
-              <span id="modal-icon-2" class="text-2xl font-bold">+</span>
+              <span class="text-lg font-semibold">Primer Curso</span>
+              <span id="modal-icon-3" class="text-2xl font-bold">+</span>
             </div>
 
             <div
-              id="contenido-expandible-2"
+              id="contenido-expandible-1"
               class="mt-4 opacity-0 transition-opacity duration-300"
               style="pointer-events: none"
             >
-              <p class="mb-4 text-justify leading-relaxed">
-                Administrar y optimizar sistemas informáticos y redes, garantizando seguridad, rendimiento y
-                disponibilidad. Aplicar herramientas avanzadas para la gestión, monitorización y resolución de
-                incidencias. Prácticas profesionales: 500 horas en empresas, poniendo en práctica los conocimientos
-                técnicos en entornos reales.
+              <p class="mb-4 text-start text-xs leading-relaxed md:text-base">
+                Si vienes de un ciclo formativo de Grado Medio o ya cuentas con un Grado Superior relacionado, puedes
+                acceder a esta formación con la posibilidad de convalidar asignaturas de forma gratuita. Está
+                especialmente recomendada para perfiles con estudios previos en áreas como sistemas informáticos,
+                desarrollo de aplicaciones o administración de redes.
               </p>
-              <table class="w-full border-collapse text-left text-sm">
+
+              <table class="w-full table-fixed border-collapse text-left text-xs md:text-base">
                 <thead>
                   <tr class="bg-gray-200">
-                    <th class="border p-2">Asignatura</th>
-                    <th class="border p-2">Semestre</th>
-                    <th class="border p-2">Tipo</th>
-                    <th class="border p-2">Horas</th>
+                    <th class="w-1/2 break-words border p-2 md:w-1/3 md:p-3">Asignatura</th>
+                    <th class="w-1/2 break-words border p-2 md:w-1/3 md:p-3">Semestre</th>
+                    <th class="hidden w-1/2 break-words border p-2 md:table-cell md:w-1/3 md:p-3">Tipo</th>
+                    <th class="w-1/2 break-words border p-2 md:w-1/3 md:p-3">Horas</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="border p-2">Implantación de sistema operatico</td>
-                    <td class="border p-2">1º</td>
-                    <td class="border p-2">Obligatoria</td>
-                    <td class="border p-2">190</td>
+                    <td class="break-words border p-2 md:p-3">Implantación de sistema operativo</td>
+                    <td class="break-words border p-2 md:p-3">1º</td>
+                    <td class="hidden break-words border p-2 md:table-cell md:p-3">Obligatoria</td>
+                    <td class="break-words border p-2 md:p-3">190</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">Planificación y administración de redes</td>
-                    <td class="border p-2">1º</td>
-                    <td class="border p-2">Obligatoria</td>
-                    <td class="border p-2">170</td>
+                    <td class="break-words border p-2 md:p-3">Planificación y administración de redes</td>
+                    <td class="break-words border p-2 md:p-3">1º</td>
+                    <td class="hidden break-words border p-2 md:table-cell md:p-3">Obligatoria</td>
+                    <td class="break-words border p-2 md:p-3">170</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">Fundamentos del hardware</td>
-                    <td class="border p-2">1º</td>
-                    <td class="border p-2">Obligatoria</td>
-                    <td class="border p-2">90</td>
+                    <td class="break-words border p-2 md:p-3">Fundamentos del hardware</td>
+                    <td class="break-words border p-2 md:p-3">1º</td>
+                    <td class="hidden break-words border p-2 md:table-cell md:p-3">Obligatoria</td>
+                    <td class="break-words border p-2 md:p-3">90</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">Gestion de base de datos</td>
-                    <td class="border p-2">1º</td>
-                    <td class="border p-2">Obligatoria</td>
-                    <td class="border p-2">170</td>
+                    <td class="break-words border p-2 md:p-3">Gestión de base de datos</td>
+                    <td class="break-words border p-2 md:p-3">1º</td>
+                    <td class="hidden break-words border p-2 md:table-cell md:p-3">Obligatoria</td>
+                    <td class="break-words border p-2 md:p-3">170</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">Lenguajes de marca</td>
-                    <td class="border p-2">1º</td>
-                    <td class="border p-2">Obligatoria</td>
-                    <td class="border p-2">170</td>
+                    <td class="break-words border p-2 md:p-3">Lenguajes de marca</td>
+                    <td class="break-words border p-2 md:p-3">1º</td>
+                    <td class="hidden break-words border p-2 md:table-cell md:p-3">Obligatoria</td>
+                    <td class="break-words border p-2 md:p-3">170</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">Digitalización aplicada al sector productivo</td>
-                    <td class="border p-2">1º</td>
-                    <td class="border p-2">Obligatoria</td>
-                    <td class="border p-2">30</td>
+                    <td class="break-words border p-2 md:p-3">Digitalización aplicada al sector productivo</td>
+                    <td class="break-words border p-2 md:p-3">1º</td>
+                    <td class="hidden break-words border p-2 md:table-cell md:p-3">Obligatoria</td>
+                    <td class="break-words border p-2 md:p-3">30</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">Itenerario personal para la empleabilidad</td>
-                    <td class="border p-2">1º</td>
-                    <td class="border p-2">Obligatoria</td>
-                    <td class="border p-2">90</td>
+                    <td class="break-words border p-2 md:p-3">Itinerario personal para la empleabilidad</td>
+                    <td class="break-words border p-2 md:p-3">1º</td>
+                    <td class="hidden break-words border p-2 md:table-cell md:p-3">Obligatoria</td>
+                    <td class="break-words border p-2 md:p-3">90</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">Horario reservado para el modulo en ingles</td>
-                    <td class="border p-2">1º</td>
-                    <td class="border p-2">Obligatoria</td>
-                    <td class="border p-2">70</td>
+                    <td class="break-words border p-2 md:p-3">Horario reservado para el módulo en inglés</td>
+                    <td class="break-words border p-2 md:p-3">1º</td>
+                    <td class="hidden break-words border p-2 md:table-cell md:p-3">Obligatoria</td>
+                    <td class="break-words border p-2 md:p-3">70</td>
                   </tr>
                 </tbody>
                 <tfoot>
-                  <tr>
+                  <tr class="table-row md:hidden">
+                    <td class="border p-2 font-semibold" colspan="2">Créditos totales</td>
+                    <td class="border p-2 font-semibold">980</td>
+                  </tr>
+                  <tr class="hidden md:table-row">
                     <td class="border p-2 font-semibold" colspan="3">Créditos totales</td>
                     <td class="border p-2 font-semibold">980</td>
                   </tr>
@@ -640,15 +662,15 @@
 
           <div
             id="modal-expandible-2"
-            class="mb-6 cursor-pointer select-none rounded-lg border p-4 shadow-md"
+            class="mx-auto mb-6 max-w-md cursor-pointer select-none overflow-hidden rounded-lg border p-4 shadow-md md:mx-0 md:max-w-none"
             aria-expanded="false"
             role="button"
             tabindex="0"
-            style="overflow: hidden; max-height: 56px; transition: max-height 0.4s ease"
+            style="max-height: 56px; transition: max-height 0.4s ease"
           >
             <div class="flex items-center justify-between">
-              <span class="text-lg font-semibold">Segundo curso</span>
-              <span id="modal-icon-2" class="text-2xl font-bold">+</span>
+              <span class="text-lg font-semibold">Segundo Curso</span>
+              <span id="modal-icon-3" class="text-2xl font-bold">+</span>
             </div>
 
             <div
@@ -656,73 +678,78 @@
               class="mt-4 opacity-0 transition-opacity duration-300"
               style="pointer-events: none"
             >
-              <p class="mb-4 text-justify leading-relaxed">
+              <p class="mb-4 text-start text-xs leading-relaxed md:text-base">
                 Administrar y optimizar sistemas informáticos y redes, garantizando seguridad, rendimiento y
                 disponibilidad. Aplicar herramientas avanzadas para la gestión, monitorización y resolución de
                 incidencias. Prácticas profesionales: 500 horas en empresas, poniendo en práctica los conocimientos
                 técnicos en entornos reales.
               </p>
-              <table class="w-full border-collapse text-left text-sm">
+
+              <table class="w-full table-fixed border-collapse text-left text-xs md:text-base">
                 <thead>
                   <tr class="bg-gray-200">
-                    <th class="border p-2">Asignatura</th>
-                    <th class="border p-2">Semestre</th>
-                    <th class="border p-2">Tipo</th>
-                    <th class="border p-2">Horas</th>
+                    <th class="w-1/2 break-words border p-2 md:w-1/3 md:p-3">Asignatura</th>
+                    <th class="w-1/2 break-words border p-2 md:w-1/3 md:p-3">Semestre</th>
+                    <th class="hidden w-1/2 break-words border p-2 md:table-cell md:w-1/3 md:p-3">Tipo</th>
+                    <th class="w-1/2 break-words border p-2 md:w-1/3 md:p-3">Horas</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="border p-2">Administración de sistema operativo</td>
-                    <td class="border p-2">2º</td>
-                    <td class="border p-2">Obligatoria</td>
-                    <td class="border p-2">125</td>
+                    <td class="break-words border p-2 md:p-3">Administración de sistema operativo</td>
+                    <td class="break-words border p-2 md:p-3">2º</td>
+                    <td class="hidden break-words border p-2 md:table-cell md:p-3">Obligatoria</td>
+                    <td class="break-words border p-2 md:p-3">125</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">Servicios de red e internet</td>
-                    <td class="border p-2">2º</td>
-                    <td class="border p-2">Obligatoria</td>
-                    <td class="border p-2">125</td>
+                    <td class="break-words border p-2 md:p-3">Servicios de red e internet</td>
+                    <td class="break-words border p-2 md:p-3">2º</td>
+                    <td class="hidden break-words border p-2 md:table-cell md:p-3">Obligatoria</td>
+                    <td class="break-words border p-2 md:p-3">125</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">Empresa e iniciativa emprededora</td>
-                    <td class="border p-2">2º</td>
-                    <td class="border p-2">Obligatoria</td>
-                    <td class="border p-2">60</td>
+                    <td class="break-words border p-2 md:p-3">Empresa e iniciativa emprededora</td>
+                    <td class="break-words border p-2 md:p-3">2º</td>
+                    <td class="hidden break-words border p-2 md:table-cell md:p-3">Obligatoria</td>
+                    <td class="break-words border p-2 md:p-3">60</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">Implantación de aplicación web</td>
-                    <td class="border p-2">2º</td>
-                    <td class="border p-2">Obligatoria</td>
-                    <td class="border p-2">134</td>
+                    <td class="break-words border p-2 md:p-3">Implantación de aplicación web</td>
+                    <td class="break-words border p-2 md:p-3">2º</td>
+                    <td class="hidden break-words border p-2 md:table-cell md:p-3">Obligatoria</td>
+                    <td class="break-words border p-2 md:p-3">134</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">Administración de sistema de gestores gbd</td>
-                    <td class="border p-2">2º</td>
-                    <td class="border p-2">Obligatoria</td>
-                    <td class="border p-2">60</td>
+                    <td class="break-words border p-2 md:p-3">Administración de sistema de gestores gbd</td>
+                    <td class="break-words border p-2 md:p-3">2º</td>
+                    <td class="hidden break-words border p-2 md:table-cell md:p-3">Obligatoria</td>
+                    <td class="break-words border p-2 md:p-3">60</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">seguridad y alta disponibilidad</td>
-                    <td class="border p-2">2º</td>
-                    <td class="border p-2">Obligatoria</td>
-                    <td class="border p-2">95</td>
+                    <td class="break-words border p-2 md:p-3">seguridad y alta disponibilidad</td>
+                    <td class="break-words border p-2 md:p-3">2º</td>
+                    <td class="hidden break-words border p-2 md:table-cell md:p-3">Obligatoria</td>
+                    <td class="break-words border p-2 md:p-3">95</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">Proyecto de administración de sistema informatico</td>
-                    <td class="border p-2">2º</td>
-                    <td class="border p-2">Obligatoria</td>
-                    <td class="border p-2">55</td>
+                    <td class="break-words border p-2 md:p-3">Proyecto de administración de sistema informatico</td>
+                    <td class="break-words border p-2 md:p-3">2º</td>
+                    <td class="hidden break-words border p-2 md:table-cell md:p-3">Obligatoria</td>
+                    <td class="break-words border p-2 md:p-3">55</td>
                   </tr>
                   <tr>
-                    <td class="border p-2">Practicas</td>
-                    <td class="border p-2">2º</td>
-                    <td class="border p-2">Obligatorias</td>
-                    <td class="border p-2">500</td>
+                    <td class="break-words border p-2 md:p-3">Practicas</td>
+                    <td class="break-words border p-2 md:p-3">2º</td>
+                    <td class="hidden break-words border p-2 md:table-cell md:p-3">Obligatorias</td>
+                    <td class="break-words border p-2 md:p-3">500</td>
                   </tr>
                 </tbody>
                 <tfoot>
-                  <tr>
+                  <tr class="table-row md:hidden">
+                    <td class="border p-2 font-semibold" colspan="2">Créditos totales</td>
+                    <td class="border p-2 font-semibold">1020</td>
+                  </tr>
+                  <tr class="hidden md:table-row">
                     <td class="border p-2 font-semibold" colspan="3">Créditos totales</td>
                     <td class="border p-2 font-semibold">1020</td>
                   </tr>
@@ -733,7 +760,7 @@
 
           <div
             id="modal-expandible-3"
-            class="mb-6 cursor-pointer select-none rounded-lg border p-4 shadow-md"
+            class="mx-auto mb-6 max-w-md cursor-pointer select-none rounded-lg border p-4 shadow-md md:mx-0 md:max-w-none"
             aria-expanded="false"
             role="button"
             tabindex="0"
@@ -760,7 +787,7 @@
 
           <div
             id="modal-expandible-4"
-            class="mb-6 cursor-pointer select-none rounded-lg border p-4 shadow-md"
+            class="mx-auto mb-6 max-w-md cursor-pointer select-none rounded-lg border p-4 shadow-md md:mx-0 md:max-w-none"
             aria-expanded="false"
             role="button"
             tabindex="0"
@@ -792,50 +819,52 @@
           </div>
         </article>
 
-        <article class="relative flex w-1/2 flex-col items-center justify-start px-6 py-16">
+        <article class="relative flex w-full flex-col items-center justify-start px-6 py-12 md:w-1/2 md:px-6 md:py-16">
           <div
-            class="sticky top-16 w-full max-w-md rounded-2xl border border-gray-200 bg-white/80 p-8 shadow-xl backdrop-blur-lg"
+            class="sticky top-16 w-full max-w-md rounded-2xl border border-gray-200 bg-white/80 p-6 shadow-xl backdrop-blur-lg sm:p-8"
           >
-            <h3 class="mb-6 text-center text-3xl font-bold text-gray-900">Solicitar Información</h3>
+            <h3 class="mb-6 text-center text-xl font-bold text-gray-900 sm:text-2xl md:text-3xl">
+              Solicitar Información
+            </h3>
             <form class="flex flex-col gap-4" id="info-form" novalidate>
               <input
                 type="text"
                 name="nombre"
                 placeholder="Nombre"
                 required
-                class="rounded-lg border border-gray-300 px-4 py-2 shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black"
+                class="rounded-lg border border-gray-300 px-4 py-2 text-sm shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black sm:text-base"
               />
               <input
                 type="text"
                 name="apellido"
                 placeholder="Apellido"
                 required
-                class="rounded-lg border border-gray-300 px-4 py-2 shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black"
+                class="rounded-lg border border-gray-300 px-4 py-2 text-sm shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black sm:text-base"
               />
               <input
                 type="email"
                 name="correo"
                 placeholder="Correo electrónico"
                 required
-                class="rounded-lg border border-gray-300 px-4 py-2 shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black"
+                class="rounded-lg border border-gray-300 px-4 py-2 text-sm shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black sm:text-base"
               />
               <input
                 type="tel"
                 name="telefono"
                 placeholder="Número de teléfono"
                 required
-                class="rounded-lg border border-gray-300 px-4 py-2 shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black"
+                class="rounded-lg border border-gray-300 px-4 py-2 text-sm shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black sm:text-base"
               />
               <textarea
                 name="mensaje"
                 rows="4"
                 placeholder="Pedir información"
                 required
-                class="resize-none rounded-lg border border-gray-300 px-4 py-2 shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black"
+                class="resize-none rounded-lg border border-gray-300 px-4 py-2 text-sm shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black sm:text-base"
               ></textarea>
               <button
                 type="submit"
-                class="mt-2 rounded-lg bg-gradient-to-r from-black to-gray-800 py-2 text-lg font-semibold text-white shadow-md transition hover:from-gray-800 hover:to-black"
+                class="mt-2 rounded-lg bg-gradient-to-r from-black to-gray-800 py-2 text-base font-semibold text-white shadow-md transition hover:from-gray-800 hover:to-black sm:text-lg"
               >
                 Enviar
               </button>
@@ -889,12 +918,9 @@
     <footer class="bg-(--footer-bg) text-(--footer-color) px-6 pb-4 pt-8">
       <div class="mb-8 flex flex-col items-center justify-between gap-6 md:flex-row">
         <div class="mb-4 flex justify-center md:mb-0 md:justify-start">
-          <img
-            src="public/logo/HomePgae-Logo-Header.png"
-            alt="Logo Sant Josep Obrer Footer"
-            title="Logo Sant Josep Obrer Footer"
-            class="h-16 sm:h-20 md:h-24"
-          />
+          <a href="index.html" class="h-auto max-h-full max-w-[7rem]" title="Logo Sant Josep Obrer">
+            <img src="public/logo/image.png" alt="Logo Sant Josep Obrer" class="h-auto w-full" />
+          </a>
         </div>
 
         <div class="flex flex-wrap justify-center gap-4">
@@ -903,7 +929,7 @@
               src="public/icon/instagram.svg"
               alt="Instagram"
               title="Instagram"
-              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 rounded-full p-2 transition duration-500"
+              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 transform rounded-full p-2 transition-transform duration-300 ease-in-out hover:scale-150"
             />
           </a>
           <a href="https://www.instagram.com/sjo_i_cc/" target="_blank" rel="noopener noreferrer">
@@ -911,7 +937,7 @@
               src="public/icon/facebook.svg"
               alt="Facebook"
               title="Facebook"
-              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 rounded-full p-2 transition duration-500"
+              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 transform rounded-full p-2 transition-transform duration-300 ease-in-out hover:scale-150"
             />
           </a>
           <a href="https://www.youtube.com/channel/UCT9dm1zPiBYj4zQlsdQa4MQ" target="_blank" rel="noopener noreferrer">
@@ -919,7 +945,7 @@
               src="public/icon/Logo--youtube.svg"
               alt="YouTube"
               title="YouTube"
-              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 rounded-full p-2 transition duration-500"
+              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 transform rounded-full p-2 transition-transform duration-300 ease-in-out hover:scale-150"
             />
           </a>
           <a href="https://www.tiktok.com/@santjosepobrer?lang=es" target="_blank" rel="noopener noreferrer">
@@ -927,7 +953,7 @@
               src="public/icon/tiktok.svg"
               alt="TikTok"
               title="TikTok"
-              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 rounded-full p-2 transition duration-500"
+              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 transform rounded-full p-2 transition-transform duration-300 ease-in-out hover:scale-150"
             />
           </a>
           <a href="https://x.com/SJO_CC" target="_blank" rel="noopener noreferrer">
@@ -935,7 +961,7 @@
               src="public/icon/x.svg"
               alt="X"
               title="X"
-              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 rounded-full p-2 transition duration-500"
+              class="bg-(--footer-bg-social-media) hover:bg-(--footer--bg-hover-social-media) h-9 w-9 transform rounded-full p-2 transition-transform duration-300 ease-in-out hover:scale-150"
             />
           </a>
         </div>
@@ -971,17 +997,19 @@
       <hr class="my-4 border-white/40" />
 
       <div class="mb-6 flex flex-col items-center justify-between gap-4 text-sm md:flex-row">
-        <button
-          class="flex items-center gap-2 rounded-full bg-[#b4a998] px-5 py-2 font-medium text-[#fff] transition duration-500 hover:bg-[#8B8442]"
-        >
-          <img src="public/icon/Phone.svg" alt="logo de llamada footer" title="logo de llamada footer" />
-          Contáctanos
-        </button>
+        <a href="contacto.html">
+          <button
+            class="flex items-center gap-2 rounded-full bg-[#b4a998] px-5 py-2 font-medium text-[#fff] transition duration-500 hover:bg-[#8B8442]"
+          >
+            <img src="public/icon/Phone.svg" alt="logo de llamada footer" title="logo de llamada footer" />
+            Contáctanos
+          </button>
+        </a>
 
         <div class="flex flex-wrap justify-center gap-6">
-          <a href="#" class="hover:underline">Preguntas frecuentes</a>
-          <a href="#" class="hover:underline">Formulario de contacto</a>
-          <a href="#" class="hover:underline">Oficina de turismo</a>
+          <a href="extra.html" class="hover:underline">Preguntas frecuentes</a>
+          <a href="contacto.html" class="hover:underline">Formulario de contacto</a>
+          <a href="contacto.html" class="hover:underline">Oficina de Sjo</a>
         </div>
       </div>
     </footer>
