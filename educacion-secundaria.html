@@ -26,9 +26,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <section class="container__section-header relative flex min-h-dvh items-center justify-center">
+    <section
+      class="container__section-educacion relative flex min-h-dvh flex-col items-center justify-center gap-8 px-4 pt-24 lg:flex-row lg:items-center lg:justify-between lg:px-20"
+    >
       <header
-        class="header z-100 p-(--header-padding) fixed left-0 right-0 top-0 flex w-full items-center justify-between"
+        class="header z-1000 p-(--header-padding) fixed left-0 right-0 top-0 flex w-full items-center justify-between"
         id="header"
       >
         <a href="index.html" class="h-auto max-h-full max-w-[7rem]" title="Logo Sant Josep Obrer">
@@ -69,7 +71,7 @@
                 </li>
                 <li>
                   <a
-                    href="educacion-Infantil-segundo.html"
+                    href="educacion-secundaria.html"
                     class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2"
                   >
                     Educación Infantil - 2 ciclo
@@ -77,7 +79,7 @@
                 </li>
                 <li>
                   <a
-                    href="educacion-primaria.html"
+                    href="educacion-Infantil.html"
                     class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2"
                   >
                     Educación Primaria
@@ -191,7 +193,6 @@
             </li>
 
             <li><a href="innovacion.html" class="link-hover-navbar">INNOVACIÓN</a></li>
-            <li><a href="solidaridad.html" class="link-hover-navbar">SOLIDARIDAD</a></li>
             <li>
               <a
                 href="contacto.html"
@@ -224,7 +225,7 @@
                 </li>
                 <li>
                   <a
-                    href="educacion-Infantil-segundo.html"
+                    href="educacion-secundaria.html"
                     class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
                   >
                     Educación Infantil - 2 ciclo
@@ -362,7 +363,6 @@
               </ul>
             </li>
             <li><a href="innovacion.html" class="link-hover-navbar">INNOVACIÓN</a></li>
-            <li><a href="solidaridad.html" class="link-hover-navbar">SOLIDARIDAD</a></li>
             <li>
               <a
                 href="contacto.html"
@@ -378,34 +378,304 @@
         </nav>
       </header>
 
-      <div class="absolute right-10 top-1/2 flex -translate-y-1/2 transform flex-col items-end gap-2">
-        <a
-          href="https://www.facebook.com/santjosepobrercc"
-          class="border-(--border--iconos-medio--header) flex h-[52px] w-[52px] items-center justify-center rounded-full border-2 text-white hover:border-none hover:bg-[#92092B]"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="public/icon/facebook.svg" alt="logo de facebook" class="h-6 w-6" />
-        </a>
-        <a
-          href="https://www.instagram.com/sjo_i_cc/"
-          class="flex h-[52px] w-[52px] items-center justify-center rounded-full border-2 border-white text-white hover:border-none hover:bg-[#92092B]"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="public/icon/instagram.svg" alt="logo de instagram" class="h-6 w-6" />
-        </a>
-      </div>
+      <article class="flex w-full max-w-2xl flex-col justify-start text-center lg:w-1/2 lg:text-left">
+        <h1 class="text-(--asix-color) mb-6 text-3xl font-bold md:text-4xl">Educación Secundaria</h1>
+        <p class="text-(--asix-color) mb-8 text-base md:text-lg">
+          El Ciclo de Educación Secundaria es una etapa educativa que abarca desde los 0 hasta los 3 años, donde se
+          fomenta el desarrollo integral del niño a través de experiencias lúdicas y educativas adaptadas a su edad. En
+          Sant Josep Obrer, ofrecemos un entorno seguro y estimulante, con profesionales altamente cualificados que
+          acompañan a los pequeños en su proceso de aprendizaje.
+        </p>
+        <p class="text-(--asix-color) mb-8 hidden text-base md:text-lg lg:block">
+          Nuestros pequeños alumnos disfrutan de unas clases diferentes en las que desarrollan todos sus sentidos.
+        </p>
 
-      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 transform text-center text-sm text-white">
-        <p class="mb-2">SCROLL DOWN</p>
-        <div class="scroll-container mx-auto">
-          <div class="scroll-bar"></div>
+        <div
+          class="flex flex-nowrap justify-center gap-4 overflow-x-auto rounded-lg py-4 shadow-sm lg:flex-wrap lg:justify-start"
+        >
+          <div class="flex min-w-[50px] flex-col items-center text-center">
+            <i class="bi bi-file-earmark-post iconos text-sm sm:text-base"></i>
+            <span class="icon-texto text-(--texto-color-iconos) text-xs font-medium sm:text-sm">Presencial</span>
+          </div>
+          <div class="flex min-w-[50px] flex-col items-center text-center">
+            <i class="bi bi-calendar3 iconos text-sm sm:text-base"></i>
+            <span class="icon-texto text-(--texto-color-iconos) text-xs font-medium sm:text-sm">2 Años</span>
+          </div>
+          <div class="flex min-w-[50px] flex-col items-center text-center">
+            <i class="bi bi-clock iconos text-sm sm:text-base"></i>
+            <span class="icon-texto text-(--texto-color-iconos) text-xs font-medium sm:text-sm">2000 horas</span>
+          </div>
+          <div class="flex min-w-[50px] flex-col items-center text-center">
+            <i class="bi bi-calendar4 iconos text-sm sm:text-base"></i>
+            <span class="icon-texto text-(--texto-color-iconos) text-xs font-medium sm:text-sm">SEP 2025</span>
+          </div>
+          <div class="flex min-w-[50px] flex-col items-center text-center">
+            <i class="bi bi-translate iconos text-sm sm:text-base"></i>
+            <span class="icon-texto text-(--texto-color-iconos) text-xs font-medium sm:text-sm">Español</span>
+          </div>
         </div>
-      </div>
+      </article>
+
+      <article class="mb-10 flex w-full items-center justify-center pt-6 lg:mb-0 lg:w-1/2 lg:pt-0">
+        <div class="w-full max-w-sm overflow-hidden rounded-xl shadow-lg sm:w-96">
+          <img
+            src="public/picture/desktop/mujer-en-un-laboratorio-moderno-usando-un-portatil-para-escribir-lineas-de-codigo-para-aplicaciones-de-ia.jpg"
+            alt="Hombre joven mirando el probador de fibra óptica"
+            class="h-auto w-full rounded-xl object-cover"
+          />
+        </div>
+      </article>
     </section>
 
-    <main class="main" id="main"></main>
+    <main class="main" id="main">
+      <section
+        class="flex min-h-[50vh] flex-col items-center bg-[#F0F8F9] px-6 pt-10 lg:flex-row lg:items-center lg:gap-x-16 lg:px-20"
+        id="presentacion"
+      >
+        <article class="flex w-full justify-center pt-8 lg:w-1/2 lg:pt-0">
+          <div class="max-h-[fit-content] overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
+            <img
+              src="public/picture/desktop/thumb_78_1920_800_0_0_crop.png"
+              alt="Hombre joven mirando el probador de fibra óptica"
+              class="max-h-full w-auto rounded-lg object-cover"
+            />
+          </div>
+        </article>
+        <article class="flex w-full max-w-4xl flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left">
+          <h2 class="mb-10 text-3xl font-bold lg:text-4xl">Creatividad</h2>
+
+          <hr class="mx-auto mb-6 h-1 w-24 rounded border-0 bg-black lg:mx-0" />
+
+          <p class="mb-4 max-w-3xl leading-relaxed">
+            En las escuelas, todos los espacios son de aprendizaje. Pasillos, aulas, patios… Por esta razón, reconocemos
+            la importancia de la creatividad en nuestro modelo pedagógico y hacemos de la expresión artística un
+            elemento transversal de nuestra etapa.
+          </p>
+        </article>
+      </section>
+
+      <section
+        class="flex min-h-[50vh] flex-col-reverse items-center bg-[#fff] px-6 pt-10 lg:flex-row lg:items-center lg:gap-x-16 lg:px-20"
+        id="presentacion"
+      >
+        <article class="flex w-full max-w-4xl flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left">
+          <h2 class="mb-10 text-3xl font-bold lg:text-4xl">ROBOTES QUE Piensan</h2>
+
+          <hr class="mx-auto mb-6 h-1 w-24 rounded border-0 bg-black lg:mx-0" />
+
+          <p class="mb-4 max-w-3xl leading-relaxed">
+            La espectacularidad de las máquinas no debe esconder el verdadero sentido de la Robótica: aprender a
+            programar y aprender a pensar de forma ordenada, crítica y sistemática.
+          </p>
+
+          <p class="mb-4 max-w-3xl leading-relaxed">
+            Éste es el sentido que damos a la Robótica ya la Programación, un complemento imprescindible para nuestro
+            proceso de aprendizaje
+          </p>
+        </article>
+
+        <article class="flex w-full justify-center pt-8 lg:w-1/2 lg:pt-0">
+          <div class="max-h-[fit-content] overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
+            <img
+              src="public/picture/desktop/thumb_78_1920_800_0_0_crop.png"
+              alt="Hombre joven mirando el probador de fibra óptica"
+              class="max-h-full w-auto rounded-lg object-cover"
+            />
+          </div>
+        </article>
+      </section>
+
+      <section
+        class="flex min-h-[50vh] flex-col items-center bg-[#F0F8F9] px-6 pt-10 lg:flex-row lg:items-center lg:gap-x-16 lg:px-20"
+        id="presentacion"
+      >
+        <article class="flex w-full justify-center pt-8 lg:w-1/2 lg:pt-0">
+          <div class="max-h-[fit-content] overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
+            <img
+              src="public/picture/desktop/thumb_78_1920_800_0_0_crop.png"
+              alt="Hombre joven mirando el probador de fibra óptica"
+              class="max-h-full w-auto rounded-lg object-cover"
+            />
+          </div>
+        </article>
+        <article class="flex w-full max-w-4xl flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left">
+          <h2 class="mb-10 text-3xl font-bold lg:text-4xl">Filosofia y Comunicación</h2>
+
+          <hr class="mx-auto mb-6 h-1 w-24 rounded border-0 bg-black lg:mx-0" />
+
+          <p class="mb-4 max-w-3xl leading-relaxed">
+            Filosofía 3/18 es un programa transversal en el que los alumnos reflexionan y analizan de forma ordenada y
+            crítica la realidad que les rodea. Siguiendo las pautas del programa Philosophy for Children introducimos
+            rutinas de pensamiento y reflexión en todos los cursos.
+          </p>
+        </article>
+      </section>
+
+      <section class="flex min-h-dvh items-center justify-center bg-[#fff] px-4 py-12">
+        <div class="grid w-full max-w-6xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="flex flex-col items-center rounded-2xl bg-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-[0_10px_20px_rgba(146,9,43,0.3)]"
+          >
+            <div class="flex h-64 w-full items-center justify-center rounded-t-2xl bg-[#d2ddd8] p-4">
+              <img
+                src="public/picture/desktop/escuela-kIdE--1248x698@abc.webp"
+                alt="Atelier"
+                class="h-full rounded-lg object-contain"
+              />
+            </div>
+
+            <div class="p-6 text-center">
+              <h3 class="mb-1 text-xl font-bold text-gray-900">Creamos y Aprendemos</h3>
+              <p class="text-start text-sm text-gray-800">
+                Uno de los elementos clave de nuestro proyecto educativo es la convicción de que el aprendizaje
+                innovador debe tener un componente real, significativo y competencial. Aprendemos por proyectos,
+                aprendemos pensando y de forma activa.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center rounded-2xl bg-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-[0_10px_20px_rgba(146,9,43,0.3)]"
+          >
+            <div class="flex h-64 w-full items-center justify-center rounded-t-2xl bg-[#d2ddd8] p-4">
+              <img
+                src="public/picture/desktop/estudiar-educacion-infantil.jpg"
+                alt="Atelier"
+                class="h-full rounded-lg object-contain"
+              />
+            </div>
+
+            <div class="p-6 text-center">
+              <h3 class="mb-1 text-xl font-bold text-gray-900">Conectados en el mundo</h3>
+              <p class="text-start text-sm text-gray-800">
+                Los alumnos disponen individualmente de un dispositivo Chromebook que les permite trabajar en su entorno
+                Google for Education. Aquí utilizan herramientas de trabajo colaborativo y conectividad que facilitan
+                significativamente su aprendizaje..
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center rounded-2xl bg-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-[0_10px_20px_rgba(146,9,43,0.3)]"
+          >
+            <div class="flex h-64 w-full items-center justify-center rounded-t-2xl bg-[#d2ddd8] p-4">
+              <img
+                src="public/picture/desktop/121976136_twitter-post.jpg"
+                alt="Atelier"
+                class="h-full rounded-lg object-contain"
+              />
+            </div>
+
+            <div class="p-6 text-center">
+              <h3 class="mb-1 text-xl font-bold text-gray-900">Activos</h3>
+              <p class="text-start text-sm text-gray-800">
+                El deporte es uno de los ejes transversales del Proyecto Educativo de Sant Josep Obrer. Y lo hacemos con
+                unas instalaciones de calidad pero también con una concepción del deporte y la actividad física que lo
+                entiende como un eje básico para las nuevas formas de aprender y vivir..
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="flex min-h-[50vh] flex-col items-center bg-[#F0F8F9] px-6 pt-10 lg:flex-row lg:items-center lg:gap-x-16 lg:px-20"
+        id="presentacion"
+      >
+        <article class="flex w-full justify-center pt-8 lg:w-1/2 lg:pt-0">
+          <div class="max-h-[fit-content] overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
+            <img
+              src="public/picture/desktop/thumb_78_1920_800_0_0_crop.png"
+              alt="Hombre joven mirando el probador de fibra óptica"
+              class="max-h-full w-auto rounded-lg object-cover"
+            />
+          </div>
+        </article>
+        <article class="flex w-full max-w-4xl flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left">
+          <h2 class="mb-10 text-3xl font-bold lg:text-4xl">Más que extraescolares</h2>
+
+          <hr class="mx-auto mb-6 h-1 w-24 rounded border-0 bg-black lg:mx-0" />
+
+          <p class="mb-4 max-w-3xl leading-relaxed">
+            La pluralidad y el complemento a nuestro itinerario académico son la razón de ser de la oferta de
+            extraescolares que generamos en Secundaria. Desde el CLUB DE DEBATE a la INTRODUCCIÓN AL LENGUAJE DE SIGNOS,
+            pasando por el CLUB DE ROBÓTICA, la oferta quiere precisamente estimular diferentes ámbitos de
+            conocimiento..
+          </p>
+        </article>
+      </section>
+
+      <section id="contactanos" class="flex flex-col overflow-hidden bg-[#fff]">
+        <div class="w-full px-4 py-6 text-center md:px-8 md:py-8">
+          <h4 class="text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
+            Solicita información sobre la educación Secundaria
+          </h4>
+          <p class="mt-1 text-sm text-gray-600 sm:text-base">Descubre nuestra educación secundaria</p>
+        </div>
+
+        <div class="flex flex-col md:flex-row">
+          <article class="hidden w-full items-center justify-center md:flex md:w-1/2 md:pl-4 lg:pl-8">
+            <div class="overflow-hidden rounded-lg shadow-lg">
+              <img
+                src="public/picture/desktop/thumb_1111_1280_720_0_0_crop.jpg"
+                alt="Hombre joven mirando el probador de fibra óptica"
+                class="h-full w-auto rounded-lg object-cover"
+              />
+            </div>
+          </article>
+
+          <article class="flex w-full flex-col items-center justify-center px-4 py-6 md:w-1/2 md:px-12 md:py-8">
+            <div
+              class="w-full max-w-md rounded-2xl border border-gray-200 bg-white/80 p-6 shadow-xl backdrop-blur-lg sm:p-8"
+            >
+              <form class="flex flex-col gap-4" id="info-form" novalidate>
+                <input
+                  type="text"
+                  name="nombre"
+                  placeholder="Nombre"
+                  required
+                  class="rounded-lg border border-gray-300 px-4 py-2 text-sm shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black sm:text-base"
+                />
+                <input
+                  type="text"
+                  name="apellido"
+                  placeholder="Apellido"
+                  required
+                  class="rounded-lg border border-gray-300 px-4 py-2 text-sm shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black sm:text-base"
+                />
+                <input
+                  type="email"
+                  name="correo"
+                  placeholder="Correo electrónico"
+                  required
+                  class="rounded-lg border border-gray-300 px-4 py-2 text-sm shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black sm:text-base"
+                />
+                <input
+                  type="tel"
+                  name="telefono"
+                  placeholder="Número de teléfono"
+                  required
+                  class="rounded-lg border border-gray-300 px-4 py-2 text-sm shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black sm:text-base"
+                />
+                <textarea
+                  name="mensaje"
+                  rows="4"
+                  placeholder="Pedir información"
+                  required
+                  class="resize-none rounded-lg border border-gray-300 px-4 py-2 text-sm shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black sm:text-base"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="mt-2 rounded-lg bg-gradient-to-r from-black to-gray-800 py-2 text-base font-semibold text-white shadow-md transition hover:from-gray-800 hover:to-black sm:text-lg"
+                >
+                  Enviar
+                </button>
+              </form>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
 
     <footer class="bg-(--footer-bg) text-(--footer-color) px-6 pb-4 pt-8">
       <div class="mb-8 flex flex-col items-center justify-between gap-6 md:flex-row">
@@ -478,10 +748,6 @@
         </a>
         <a href="innovacion.html" class="whitespace-nowrap" title="innovacion">
           INNOVACIÓN
-          <i class="bi bi-plus"></i>
-        </a>
-        <a href="solidaridad.html" class="whitespace-nowrap" title="solidaridad">
-          SOLIDARIDAD
           <i class="bi bi-plus"></i>
         </a>
       </nav>

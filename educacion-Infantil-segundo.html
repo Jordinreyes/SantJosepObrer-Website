@@ -26,9 +26,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <section class="container__section-header relative flex min-h-dvh items-center justify-center">
+    <section
+      class="container__section-educacion relative flex min-h-dvh flex-col items-center justify-center gap-8 px-4 pt-24 lg:flex-row lg:items-center lg:justify-between lg:px-20"
+    >
       <header
-        class="header z-100 p-(--header-padding) fixed left-0 right-0 top-0 flex w-full items-center justify-between"
+        class="header z-1000 p-(--header-padding) fixed left-0 right-0 top-0 flex w-full items-center justify-between"
         id="header"
       >
         <a href="index.html" class="h-auto max-h-full max-w-[7rem]" title="Logo Sant Josep Obrer">
@@ -69,7 +71,7 @@
                 </li>
                 <li>
                   <a
-                    href="educacion-Infantil-segundo.html"
+                    href="educacion-secundaria.html"
                     class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2"
                   >
                     Educación Infantil - 2 ciclo
@@ -77,7 +79,7 @@
                 </li>
                 <li>
                   <a
-                    href="educacion-primaria.html"
+                    href="educacion-Infantil.html"
                     class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) rounded px-4 py-2"
                   >
                     Educación Primaria
@@ -191,7 +193,6 @@
             </li>
 
             <li><a href="innovacion.html" class="link-hover-navbar">INNOVACIÓN</a></li>
-            <li><a href="solidaridad.html" class="link-hover-navbar">SOLIDARIDAD</a></li>
             <li>
               <a
                 href="contacto.html"
@@ -224,7 +225,7 @@
                 </li>
                 <li>
                   <a
-                    href="educacion-Infantil-segundo.html"
+                    href="educacion-secundaria.html"
                     class="hover:bg-(--color-enlace--contact) hover:text-(--header-color) block rounded px-4 py-2 text-black"
                   >
                     Educación Infantil - 2 ciclo
@@ -362,7 +363,6 @@
               </ul>
             </li>
             <li><a href="innovacion.html" class="link-hover-navbar">INNOVACIÓN</a></li>
-            <li><a href="solidaridad.html" class="link-hover-navbar">SOLIDARIDAD</a></li>
             <li>
               <a
                 href="contacto.html"
@@ -378,34 +378,452 @@
         </nav>
       </header>
 
-      <div class="absolute right-10 top-1/2 flex -translate-y-1/2 transform flex-col items-end gap-2">
-        <a
-          href="https://www.facebook.com/santjosepobrercc"
-          class="border-(--border--iconos-medio--header) flex h-[52px] w-[52px] items-center justify-center rounded-full border-2 text-white hover:border-none hover:bg-[#92092B]"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="public/icon/facebook.svg" alt="logo de facebook" class="h-6 w-6" />
-        </a>
-        <a
-          href="https://www.instagram.com/sjo_i_cc/"
-          class="flex h-[52px] w-[52px] items-center justify-center rounded-full border-2 border-white text-white hover:border-none hover:bg-[#92092B]"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="public/icon/instagram.svg" alt="logo de instagram" class="h-6 w-6" />
-        </a>
-      </div>
+      <article class="flex w-full max-w-2xl flex-col justify-start text-center lg:w-1/2 lg:text-left">
+        <h1 class="text-(--asix-color) mb-6 text-3xl font-bold md:text-4xl">Educación Infantil - 2 ciclo</h1>
+        <p class="text-(--asix-color) mb-8 text-base md:text-lg">
+          El Ciclo de Educación Infantil - 2 ciclo es una etapa educativa que abarca desde los 0 hasta los 3 años, donde
+          se fomenta el desarrollo integral del niño a través de experiencias lúdicas y educativas adaptadas a su edad.
+          En Sant Josep Obrer, ofrecemos un entorno seguro y estimulante, con profesionales altamente cualificados que
+          acompañan a los pequeños en su proceso de aprendizaje.
+        </p>
+        <p class="text-(--asix-color) mb-8 hidden text-base md:text-lg lg:block">
+          Nuestros pequeños alumnos disfrutan de unas clases diferentes en las que desarrollan todos sus sentidos.
+        </p>
 
-      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 transform text-center text-sm text-white">
-        <p class="mb-2">SCROLL DOWN</p>
-        <div class="scroll-container mx-auto">
-          <div class="scroll-bar"></div>
+        <div
+          class="flex flex-nowrap justify-center gap-4 overflow-x-auto rounded-lg py-4 shadow-sm lg:flex-wrap lg:justify-start"
+        >
+          <div class="flex min-w-[50px] flex-col items-center text-center">
+            <i class="bi bi-file-earmark-post iconos text-sm sm:text-base"></i>
+            <span class="icon-texto text-(--texto-color-iconos) text-xs font-medium sm:text-sm">Presencial</span>
+          </div>
+          <div class="flex min-w-[50px] flex-col items-center text-center">
+            <i class="bi bi-calendar3 iconos text-sm sm:text-base"></i>
+            <span class="icon-texto text-(--texto-color-iconos) text-xs font-medium sm:text-sm">2 Años</span>
+          </div>
+          <div class="flex min-w-[50px] flex-col items-center text-center">
+            <i class="bi bi-clock iconos text-sm sm:text-base"></i>
+            <span class="icon-texto text-(--texto-color-iconos) text-xs font-medium sm:text-sm">2000 horas</span>
+          </div>
+          <div class="flex min-w-[50px] flex-col items-center text-center">
+            <i class="bi bi-calendar4 iconos text-sm sm:text-base"></i>
+            <span class="icon-texto text-(--texto-color-iconos) text-xs font-medium sm:text-sm">SEP 2025</span>
+          </div>
+          <div class="flex min-w-[50px] flex-col items-center text-center">
+            <i class="bi bi-translate iconos text-sm sm:text-base"></i>
+            <span class="icon-texto text-(--texto-color-iconos) text-xs font-medium sm:text-sm">Español</span>
+          </div>
         </div>
-      </div>
+      </article>
+
+      <article class="mb-10 flex w-full items-center justify-center pt-6 lg:mb-0 lg:w-1/2 lg:pt-0">
+        <div class="w-full max-w-sm overflow-hidden rounded-xl shadow-lg sm:w-96">
+          <img
+            src="public/picture/desktop/mujer-en-un-laboratorio-moderno-usando-un-portatil-para-escribir-lineas-de-codigo-para-aplicaciones-de-ia.jpg"
+            alt="Hombre joven mirando el probador de fibra óptica"
+            class="h-auto w-full rounded-xl object-cover"
+          />
+        </div>
+      </article>
     </section>
 
-    <main class="main" id="main"></main>
+    <main class="main" id="main">
+      <section
+        class="flex min-h-[50vh] flex-col items-center bg-[#F0F8F9] px-6 pt-10 lg:flex-row lg:items-center lg:gap-x-16 lg:px-20"
+        id="presentacion"
+      >
+        <article class="flex w-full justify-center pt-8 lg:w-1/2 lg:pt-0">
+          <div class="max-h-[fit-content] overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
+            <img
+              src="public/picture/desktop/thumb_78_1920_800_0_0_crop.png"
+              alt="Hombre joven mirando el probador de fibra óptica"
+              class="max-h-full w-auto rounded-lg object-cover"
+            />
+          </div>
+        </article>
+        <article class="flex w-full max-w-4xl flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left">
+          <h2 class="mb-10 text-3xl font-bold lg:text-4xl">Proyecto "Entusiasmado"</h2>
+
+          <hr class="mx-auto mb-6 h-1 w-24 rounded border-0 bg-black lg:mx-0" />
+
+          <p class="mb-4 max-w-3xl leading-relaxed">
+            Proyecto didáctico-pedagógico de 3 a 12 años (dividido en dos etapas infantil y primaria) que permite
+            trabajar las matemáticas de una forma útil, real, lúdica y sobre todo práctica. Un proyecto que aplica la
+            teoría de las inteligencias múltiples y el trabajo por capacidades individuales. Y donde el trabajo
+            cooperativo, el aprendizaje deductivo, la manipulación y el juego desempeñan un papel muy importante.
+          </p>
+        </article>
+      </section>
+
+      <section
+        class="flex min-h-[50vh] flex-col-reverse items-center bg-[#fff] px-6 pt-10 lg:flex-row lg:items-center lg:gap-x-16 lg:px-20"
+        id="presentacion"
+      >
+        <article class="flex w-full max-w-4xl flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left">
+          <h2 class="mb-10 text-3xl font-bold lg:text-4xl">Música</h2>
+
+          <hr class="mx-auto mb-6 h-1 w-24 rounded border-0 bg-black lg:mx-0" />
+
+          <p class="mb-4 max-w-3xl leading-relaxed">
+            Espacio en el que los niños experimentan, disfrutan y aprenden las cualidades del sonido a través de su
+            propio cuerpo como instrumento sonoro, con su voz y con la manipulación de instrumentos clásicos y de
+            pequeña percusión a partir de la canción y el juego lúdico.
+          </p>
+        </article>
+
+        <article class="flex w-full justify-center pt-8 lg:w-1/2 lg:pt-0">
+          <div class="max-h-[fit-content] overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
+            <img
+              src="public/picture/desktop/thumb_78_1920_800_0_0_crop.png"
+              alt="Hombre joven mirando el probador de fibra óptica"
+              class="max-h-full w-auto rounded-lg object-cover"
+            />
+          </div>
+        </article>
+      </section>
+
+      <section
+        class="flex min-h-[50vh] flex-col items-center bg-[#F0F8F9] px-6 pt-10 lg:flex-row lg:items-center lg:gap-x-16 lg:px-20"
+        id="presentacion"
+      >
+        <article class="flex w-full justify-center pt-8 lg:w-1/2 lg:pt-0">
+          <div class="max-h-[fit-content] overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
+            <img
+              src="public/picture/desktop/thumb_78_1920_800_0_0_crop.png"
+              alt="Hombre joven mirando el probador de fibra óptica"
+              class="max-h-full w-auto rounded-lg object-cover"
+            />
+          </div>
+        </article>
+        <article class="flex w-full max-w-4xl flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left">
+          <h2 class="mb-10 text-3xl font-bold lg:text-4xl">Taller de padres</h2>
+
+          <hr class="mx-auto mb-6 h-1 w-24 rounded border-0 bg-black lg:mx-0" />
+
+          <p class="mb-4 max-w-3xl leading-relaxed">
+            Potenciamos la participación de los padres y madres en el proceso escolar de hijos e hijas. Pensamos que es
+            un derecho y también un deber. Es importante el vínculo familia-escuela ya que de esta forma se sienten
+            parte de un mismo proyecto y comparten objetivos y significados.
+          </p>
+        </article>
+      </section>
+
+      <section class="flex min-h-dvh items-center justify-center bg-[#fff] px-4 py-12">
+        <div class="grid w-full max-w-6xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="flex flex-col items-center rounded-2xl bg-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-[0_10px_20px_rgba(146,9,43,0.3)]"
+          >
+            <div class="flex h-64 w-full items-center justify-center rounded-t-2xl bg-[#d2ddd8] p-4">
+              <img
+                src="public/picture/desktop/escuela-kIdE--1248x698@abc.webp"
+                alt="Atelier"
+                class="h-full rounded-lg object-contain"
+              />
+            </div>
+
+            <div class="p-6 text-center">
+              <h3 class="mb-1 text-xl font-bold text-gray-900">Ingles</h3>
+              <p class="text-start text-sm text-gray-800">
+                Iniciamos y preparamos a los alumnos en el aprendizaje de la lengua inglesa a partir del proceso natural
+                de los niños en la adquisición de una lengua. Empleando una metodología vivencial, lúdica y práctica. Y
+                siempre partiendo de los intereses de los niños, adaptados a sus edades y estimulando la curiosidad por
+                aprender.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center rounded-2xl bg-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-[0_10px_20px_rgba(146,9,43,0.3)]"
+          >
+            <div class="flex h-64 w-full items-center justify-center rounded-t-2xl bg-[#d2ddd8] p-4">
+              <img
+                src="public/picture/desktop/estudiar-educacion-infantil.jpg"
+                alt="Atelier"
+                class="h-full rounded-lg object-contain"
+              />
+            </div>
+
+            <div class="p-6 text-center">
+              <h3 class="mb-1 text-xl font-bold text-gray-900">Educación Emocional</h3>
+              <p class="text-start text-sm text-gray-800">
+                Reconocer nuestras emociones, gestionarlas y saber ponernos en el lugar del otro son tres habilidades
+                básicas por las que es necesario proporcionar herramientas en el aula. Esto permitirá a los niños vivir
+                con naturalidad las dificultades y conflictos que se irán encontrando en el camino de la vida, tanto a
+                nivel personal como profesional. Es indispensable dar a los niños la posibilidad de expresarse de forma
+                respetuosa y abierta al aula, entendiendo las emociones como un hecho natural.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center rounded-2xl bg-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-[0_10px_20px_rgba(146,9,43,0.3)]"
+          >
+            <div class="flex h-64 w-full items-center justify-center rounded-t-2xl bg-[#d2ddd8] p-4">
+              <img
+                src="public/picture/desktop/121976136_twitter-post.jpg"
+                alt="Atelier"
+                class="h-full rounded-lg object-contain"
+              />
+            </div>
+
+            <div class="p-6 text-center">
+              <h3 class="mb-1 text-xl font-bold text-gray-900">Lectoescritura</h3>
+              <p class="text-start text-sm text-gray-800">
+                Los diferentes lenguajes permiten al niño manifestar hechos y vivencias, explorar conocimientos,
+                expresar y comunicar ideas y sentimientos, lo que está imaginando o proyectando, construir pensamiento y
+                participar en diversos intercambios comunicativos. En la medida en que explora y experimenta los
+                recursos y herramientas específicas de cada lenguaje se apropia e interioriza sus procesos y códigos
+                específicos, desarrollando sus capacidades expresivas y comprensivas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="flex min-h-[50vh] flex-col items-center bg-[#F0F8F9] px-6 pt-10 lg:flex-row lg:items-center lg:gap-x-16 lg:px-20"
+        id="presentacion"
+      >
+        <article class="flex w-full justify-center pt-8 lg:w-1/2 lg:pt-0">
+          <div class="max-h-[fit-content] overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
+            <img
+              src="public/picture/desktop/thumb_78_1920_800_0_0_crop.png"
+              alt="Hombre joven mirando el probador de fibra óptica"
+              class="max-h-full w-auto rounded-lg object-cover"
+            />
+          </div>
+        </article>
+        <article class="flex w-full max-w-4xl flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left">
+          <h2 class="mb-10 text-3xl font-bold lg:text-4xl">Ludoteca</h2>
+
+          <hr class="mx-auto mb-6 h-1 w-24 rounded border-0 bg-black lg:mx-0" />
+
+          <p class="mb-4 max-w-3xl leading-relaxed">
+            Los rincones de juego simbólico responden a la necesidad que tiene el niño de conocer a los compañeros y
+            compañeras, de revivir lúdicamente unas situaciones cotidianas y poder experimentar, con la propia
+            actividad, los diversos roles que hay en su entorno.
+          </p>
+
+          <p class="mb-4 max-w-3xl leading-relaxed">
+            Los rincones son espacios destinados a la actividad lúdica que piden al alumnado una participación, libre,
+            imaginativa y creadora; favorecen la interrelación y comunicación y son el primer paso hacia la
+            socialización. El alumnado necesita compartir espacios, juego, juguetes, ponerse de acuerdo unos con otros,
+            establecer normas de comportamiento, convivencia y de juego.
+          </p>
+        </article>
+      </section>
+
+      <section
+        class="flex min-h-[50vh] flex-col-reverse items-center bg-[#fff] px-6 pt-10 lg:flex-row lg:items-center lg:gap-x-16 lg:px-20"
+        id="presentacion"
+      >
+        <article class="flex w-full max-w-4xl flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left">
+          <h2 class="mb-10 text-3xl font-bold lg:text-4xl">Artes Plásticas</h2>
+
+          <hr class="mx-auto mb-6 h-1 w-24 rounded border-0 bg-black lg:mx-0" />
+
+          <p class="mb-4 max-w-3xl leading-relaxed">
+            La expresión plástica es una de las actividades más espontáneas y gratificantes para los niños. Desde
+            pequeños les atrae la idea de dejar su huella sobre cualquier soporte. El objetivo durante los primeros años
+            de un niño es que disfrute haciendo estas actividades plásticas, para él es un juego, algo lúdico que debe
+            servir para que los niños tengan la libertad de expresarse libremente..
+          </p>
+        </article>
+
+        <article class="flex w-full justify-center pt-8 lg:w-1/2 lg:pt-0">
+          <div class="max-h-[fit-content] overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
+            <img
+              src="public/picture/desktop/thumb_78_1920_800_0_0_crop.png"
+              alt="Hombre joven mirando el probador de fibra óptica"
+              class="max-h-full w-auto rounded-lg object-cover"
+            />
+          </div>
+        </article>
+      </section>
+
+      <section
+        class="flex min-h-[50vh] flex-col items-center bg-[#F0F8F9] px-6 pt-10 lg:flex-row lg:items-center lg:gap-x-16 lg:px-20"
+        id="presentacion"
+      >
+        <article class="flex w-full justify-center pt-8 lg:w-1/2 lg:pt-0">
+          <div class="max-h-[fit-content] overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
+            <img
+              src="public/picture/desktop/thumb_78_1920_800_0_0_crop.png"
+              alt="Hombre joven mirando el probador de fibra óptica"
+              class="max-h-full w-auto rounded-lg object-cover"
+            />
+          </div>
+        </article>
+        <article class="flex w-full max-w-4xl flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left">
+          <h2 class="mb-10 text-3xl font-bold lg:text-4xl">Filosofia 3/18</h2>
+
+          <hr class="mx-auto mb-6 h-1 w-24 rounded border-0 bg-black lg:mx-0" />
+
+          <p class="mb-4 max-w-3xl leading-relaxed">
+            Es un currículum amplio y sistémico (3 a 18 años) que tiene como objetivo principal reforzar las habilidades
+            del pensamiento de los niños, partiendo de la filosofía como disciplina fundamental. Se trata de un proyecto
+            que concreta el deseo general de enseñar a pensar a los niños así como prepararlos a ser capaces de razonar
+            para la participación en un mundo democrático.
+          </p>
+        </article>
+      </section>
+
+      <section
+        class="flex min-h-[50vh] flex-col-reverse items-center bg-[#fff] px-6 pt-10 lg:flex-row lg:items-center lg:gap-x-16 lg:px-20"
+        id="presentacion"
+      >
+        <article class="flex w-full max-w-4xl flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left">
+          <h2 class="mb-10 text-3xl font-bold lg:text-4xl">Comedor</h2>
+
+          <hr class="mx-auto mb-6 h-1 w-24 rounded border-0 bg-black lg:mx-0" />
+
+          <p class="mb-4 max-w-3xl leading-relaxed">
+            En la etapa de educación infantil los hábitos son fundamentales para el desarrollo de los niños. Un hábito
+            muy importante es el de la ALIMENTACIÓN. Es importante que los niños tengan horarios para comer y se haga en
+            un lugar determinado. bien....
+          </p>
+        </article>
+
+        <article class="flex w-full justify-center pt-8 lg:w-1/2 lg:pt-0">
+          <div class="max-h-[fit-content] overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
+            <img
+              src="public/picture/desktop/thumb_78_1920_800_0_0_crop.png"
+              alt="Hombre joven mirando el probador de fibra óptica"
+              class="max-h-full w-auto rounded-lg object-cover"
+            />
+          </div>
+        </article>
+      </section>
+
+      <section
+        class="flex min-h-[50vh] flex-col items-center bg-[#F0F8F9] px-6 pt-10 lg:flex-row lg:items-center lg:gap-x-16 lg:px-20"
+        id="presentacion"
+      >
+        <article class="flex w-full justify-center pt-8 lg:w-1/2 lg:pt-0">
+          <div class="max-h-[fit-content] overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
+            <img
+              src="public/picture/desktop/thumb_78_1920_800_0_0_crop.png"
+              alt="Hombre joven mirando el probador de fibra óptica"
+              class="max-h-full w-auto rounded-lg object-cover"
+            />
+          </div>
+        </article>
+        <article class="flex w-full max-w-4xl flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left">
+          <h2 class="mb-10 text-3xl font-bold lg:text-4xl">Hortalizas</h2>
+
+          <hr class="mx-auto mb-6 h-1 w-24 rounded border-0 bg-black lg:mx-0" />
+
+          <p class="mb-4 max-w-3xl leading-relaxed">
+            Aporta una serie de experiencias gratificantes, enriquecedoras y únicas adaptadas a todos los niveles e
+            intereses y al mismo tiempo las podemos utilizar como recursos para que los niños aprendan contenidos
+            curriculares de todas las áreas. naturaleza y el medio ambiente.
+          </p>
+        </article>
+      </section>
+
+      <section
+        class="flex min-h-[50vh] flex-col-reverse items-center bg-[#fff] px-6 pt-10 lg:flex-row lg:items-center lg:gap-x-16 lg:px-20"
+        id="presentacion"
+      >
+        <article class="flex w-full max-w-4xl flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left">
+          <h2 class="mb-10 text-3xl font-bold lg:text-4xl">Proyecto violín</h2>
+
+          <hr class="mx-auto mb-6 h-1 w-24 rounded border-0 bg-black lg:mx-0" />
+
+          <p class="mb-4 max-w-3xl leading-relaxed">
+            Es una actividad para desarrollar las inteligencias múltiples mediante la práctica del violín. Se utiliza
+            una mezcla de diversos métodos para poder adaptar el nivel a cada edad. No se trata de realizar un
+            aprendizaje de las notas musicales o de tocar perfectamente el violín. En el ámbito cognitivo, se
+            desarrollará los sentidos con la escucha y reconocimiento auditivo, las cuerdas del violín se representan
+            con colores monosilábicos, de esta forma se puede jugar con combinaciones de ritmos. Es importante tener en
+            cuenta que los niños crearán sus propias canciones, con sus melodías y letras. En el ámbito motor, se
+            trabajará con la psicomotricidad fina y gruesa, la coordinación y la toma de conciencia del cuerpo humano.
+            Las clases se realizarán en inglés y con grupos reducidos de 5 o 6 alumnos por sesión.
+          </p>
+        </article>
+
+        <article class="flex w-full justify-center pt-8 lg:w-1/2 lg:pt-0">
+          <div class="max-h-[fit-content] overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
+            <img
+              src="public/picture/desktop/thumb_78_1920_800_0_0_crop.png"
+              alt="Hombre joven mirando el probador de fibra óptica"
+              class="max-h-full w-auto rounded-lg object-cover"
+            />
+          </div>
+        </article>
+      </section>
+
+      <section id="contactanos" class="flex flex-col overflow-hidden bg-[#F0F8F9]">
+        <div class="w-full px-4 py-6 text-center md:px-8 md:py-8">
+          <h4 class="text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
+            Solicita información sobre la educación infantil - 2 ciclo
+          </h4>
+          <p class="mt-1 text-sm text-gray-600 sm:text-base">Descubre nuestra educación infantil</p>
+        </div>
+
+        <div class="flex flex-col md:flex-row">
+          <article class="hidden w-full items-center justify-center md:flex md:w-1/2 md:pl-4 lg:pl-8">
+            <div class="overflow-hidden rounded-lg shadow-lg">
+              <img
+                src="public/picture/desktop/thumb_1111_1280_720_0_0_crop.jpg"
+                alt="Hombre joven mirando el probador de fibra óptica"
+                class="h-full w-auto rounded-lg object-cover"
+              />
+            </div>
+          </article>
+
+          <article class="flex w-full flex-col items-center justify-center px-4 py-6 md:w-1/2 md:px-12 md:py-8">
+            <div
+              class="w-full max-w-md rounded-2xl border border-gray-200 bg-white/80 p-6 shadow-xl backdrop-blur-lg sm:p-8"
+            >
+              <form class="flex flex-col gap-4" id="info-form" novalidate>
+                <input
+                  type="text"
+                  name="nombre"
+                  placeholder="Nombre"
+                  required
+                  class="rounded-lg border border-gray-300 px-4 py-2 text-sm shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black sm:text-base"
+                />
+                <input
+                  type="text"
+                  name="apellido"
+                  placeholder="Apellido"
+                  required
+                  class="rounded-lg border border-gray-300 px-4 py-2 text-sm shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black sm:text-base"
+                />
+                <input
+                  type="email"
+                  name="correo"
+                  placeholder="Correo electrónico"
+                  required
+                  class="rounded-lg border border-gray-300 px-4 py-2 text-sm shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black sm:text-base"
+                />
+                <input
+                  type="tel"
+                  name="telefono"
+                  placeholder="Número de teléfono"
+                  required
+                  class="rounded-lg border border-gray-300 px-4 py-2 text-sm shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black sm:text-base"
+                />
+                <textarea
+                  name="mensaje"
+                  rows="4"
+                  placeholder="Pedir información"
+                  required
+                  class="resize-none rounded-lg border border-gray-300 px-4 py-2 text-sm shadow-sm focus:border-black focus:outline-none focus:ring-2 focus:ring-black sm:text-base"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="mt-2 rounded-lg bg-gradient-to-r from-black to-gray-800 py-2 text-base font-semibold text-white shadow-md transition hover:from-gray-800 hover:to-black sm:text-lg"
+                >
+                  Enviar
+                </button>
+              </form>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
 
     <footer class="bg-(--footer-bg) text-(--footer-color) px-6 pb-4 pt-8">
       <div class="mb-8 flex flex-col items-center justify-between gap-6 md:flex-row">
@@ -478,10 +896,6 @@
         </a>
         <a href="innovacion.html" class="whitespace-nowrap" title="innovacion">
           INNOVACIÓN
-          <i class="bi bi-plus"></i>
-        </a>
-        <a href="solidaridad.html" class="whitespace-nowrap" title="solidaridad">
-          SOLIDARIDAD
           <i class="bi bi-plus"></i>
         </a>
       </nav>
