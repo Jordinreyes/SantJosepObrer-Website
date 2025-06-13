@@ -364,12 +364,12 @@
     </header>
 
     <main class="main" id="main">
-      <section class="flex h-[100vh] flex-col px-6 pb-10 pt-[10rem] lg:px-20">
-        <h1 class="mb-6 mt-4 text-center text-6xl font-bold tracking-wider">Contáctanos</h1>
+      <section class="flex min-h-screen flex-col px-6 pb-10 pt-[8rem] sm:px-8 md:px-10 lg:px-20">
+        <h1 class="mb-8 text-center text-4xl font-bold tracking-wider sm:text-5xl">Contáctanos</h1>
 
-        <div class="flex flex-1 flex-col gap-6 lg:flex-row">
-          <article class="flex w-full flex-col justify-center lg:w-1/2">
-            <form class="flex h-full flex-col justify-center gap-4 rounded-2xl p-6">
+        <div class="flex flex-1 flex-col gap-10 lg:flex-row lg:gap-6">
+          <article class="mx-auto w-full max-w-3xl lg:mx-0 lg:w-1/2">
+            <form class="flex flex-col gap-5 rounded-2xl bg-white p-6 shadow-md">
               <input type="text" placeholder="Nombre" class="rounded border border-gray-300 p-3 focus:outline-none" />
               <input type="email" placeholder="Email" class="rounded border border-gray-300 p-3 focus:outline-none" />
               <input type="tel" placeholder="Teléfono" class="rounded border border-gray-300 p-3 focus:outline-none" />
@@ -385,7 +385,7 @@
           </article>
 
           <article
-            class="flex h-full w-full flex-col justify-center rounded-2xl bg-[#EAEAEA] p-6 text-base leading-relaxed text-black lg:w-1/2"
+            class="mx-auto w-full max-w-3xl rounded-2xl bg-[#EAEAEA] p-6 text-base leading-relaxed text-black lg:mx-0 lg:w-1/2"
           >
             <div class="flex flex-col gap-4">
               <h2 class="text-center text-lg font-bold text-black">IMPORTANTE</h2>
@@ -394,8 +394,11 @@
                 compartas nuestra visión de apoyar y empoderar a los diseñadores en su desarrollo profesional. Buscamos
                 personas comprometidas, creativas y con ganas de aportar valor a través de sus habilidades y
                 conocimientos. Como colaborador, te invitamos a participar activamente en la creación de recursos,
-                cursos y contenidos que enriquezcan la experiencia de los diseñadores que nos visitan. Además, es
-                fundamental mantener una comunicación abierta, respetuosa y transparente, asegurando así una
+                cursos y contenidos que enriquezcan la experiencia de los diseñadores que nos visitan
+                <br />
+              </p>
+              <p class="hidden lg:block">
+                Además, es fundamental mantener una comunicación abierta, respetuosa y transparente, asegurando así una
                 colaboración fluida y exitosa. Si compartes nuestra pasión por el diseño y el aprendizaje continuo, ¡nos
                 encantaría contar contigo en nuestro equipo! Contáctanos dejándonos tus datos y explícanos de qué manera
                 te gustaría colaborar con nosotros, te responderemos lo antes posible. ¡Gracias por hacer que esta
@@ -406,32 +409,34 @@
         </div>
       </section>
 
-      <section class="flex h-[50vh] flex-col items-center justify-center gap-6 px-6 lg:flex-row lg:gap-10 lg:px-20">
-        <div class="flex max-w-sm flex-col items-center rounded-xl bg-[#EAEAEA] p-6 text-center shadow-md">
+      <section class="flex flex-col gap-8 px-6 py-12 sm:px-8 md:px-10 lg:flex-row lg:justify-center lg:gap-10 lg:px-20">
+        <div
+          class="mx-auto flex w-full max-w-sm flex-col items-center rounded-xl bg-[#EAEAEA] p-6 text-center shadow-md"
+        >
           <div class="mb-2 text-3xl"><i class="bi bi-telephone-fill"></i></div>
           <h3 class="text-lg font-semibold">(+34) 971 473308</h3>
           <p class="mt-2 text-sm text-gray-700">
-            Si necesitas ponerte en contacto con nosotros de manera rápida y directa, no dudes en llamarnos. Estamos
-            disponibles para resolver cualquier duda o brindarte la asistencia que necesites. ¡Te atenderemos con gusto!
+            Si necesitas ponerte en contacto con nosotros de manera rápida y directa, no dudes en llamarnos...
           </p>
         </div>
 
-        <div class="flex max-w-sm flex-col items-center rounded-xl bg-[#EAEAEA] p-6 text-center shadow-md">
+        <div
+          class="mx-auto flex w-full max-w-sm flex-col items-center rounded-xl bg-[#EAEAEA] p-6 text-center shadow-md"
+        >
           <div class="mb-2 text-3xl"><i class="bi bi-envelope-check-fill"></i></div>
           <h3 class="text-lg font-semibold">fp@santjosepobrer.es</h3>
           <p class="mt-2 text-sm text-gray-700">
-            Para consultas más detalladas o si prefieres escribirnos, puedes enviarnos un correo electrónico. Nos
-            aseguraremos de responderte lo antes posible con toda la información que necesitas.
+            Para consultas más detalladas o si prefieres escribirnos, puedes enviarnos un correo electrónico...
           </p>
         </div>
 
-        <div class="flex max-w-sm flex-col items-center rounded-xl bg-[#EAEAEA] p-6 text-center shadow-md">
+        <div
+          class="mx-auto flex w-full max-w-sm flex-col items-center rounded-xl bg-[#EAEAEA] p-6 text-center shadow-md"
+        >
           <div class="mb-2 text-3xl"><i class="bi bi-geo-alt-fill"></i></div>
           <h3 class="text-lg font-semibold">Carrer de Sebastià Arrom, 3-5, Llevant, 07008 Palma, Illes Balears</h3>
           <p class="mt-2 text-sm text-gray-700">
-            Si deseas visitarnos personalmente, nuestra oficina se encuentra en esta dirección. Estamos ubicados en una
-            zona de fácil acceso, y estaremos encantados de recibirte para conversar sobre nuevas oportunidades de
-            colaboración.
+            Si deseas visitarnos personalmente, nuestra oficina se encuentra en esta dirección...
           </p>
         </div>
       </section>
