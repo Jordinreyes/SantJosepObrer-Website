@@ -5,12 +5,9 @@ const header = document.getElementById("header");
 const main = document.getElementById("main");
 
 let lastScroll = 0;
-let fixed = false;
 
 window.addEventListener("scroll", () => {
   const currentScroll = window.scrollY;
-
-  if (fixed) return;
 
   if (currentScroll > lastScroll && currentScroll > 50) {
     header.classList.add("header-hidden");
@@ -19,16 +16,18 @@ window.addEventListener("scroll", () => {
   }
 
   if (currentScroll >= main.offsetTop - header.offsetHeight) {
-    header.classList.remove("header-hidden");
     header.classList.add("header-white");
     const logo = header.querySelector("img");
     logo.src = "public/logo/image2.webp";
-
-    fixed = true;
+  } else {
+    header.classList.remove("header-white");
+    const logo = header.querySelector("img");
+    logo.src = "public/logo/image.png";
   }
 
   lastScroll = currentScroll;
 });
+
 /**
  * TERMINA HEADER CAMBIO DE COLOR
  */
