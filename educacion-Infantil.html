@@ -399,11 +399,7 @@
           </div>
           <div class="flex min-w-[50px] flex-col items-center text-center">
             <i class="bi bi-calendar3 iconos text-sm sm:text-base"></i>
-            <span class="icon-texto text-(--texto-color-iconos) text-xs font-medium sm:text-sm">2 Años</span>
-          </div>
-          <div class="flex min-w-[50px] flex-col items-center text-center">
-            <i class="bi bi-clock iconos text-sm sm:text-base"></i>
-            <span class="icon-texto text-(--texto-color-iconos) text-xs font-medium sm:text-sm">2000 horas</span>
+            <span class="icon-texto text-(--texto-color-iconos) text-xs font-medium sm:text-sm">3 Años</span>
           </div>
           <div class="flex min-w-[50px] flex-col items-center text-center">
             <i class="bi bi-calendar4 iconos text-sm sm:text-base"></i>
@@ -430,7 +426,6 @@
     <main class="main" id="main">
       <section class="flex min-h-dvh items-center justify-center bg-[#F0F8F9] px-4 py-16">
         <div class="grid w-full max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-14 xl:gap-20">
-          <!-- Carta 1 -->
           <div
             class="flex min-h-[34rem] flex-col items-center rounded-2xl bg-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-[0_10px_20px_rgba(146,9,43,0.3)] lg:w-[24rem]"
           >
@@ -453,7 +448,6 @@
             </div>
           </div>
 
-          <!-- Carta 2 -->
           <div
             class="flex min-h-[34rem] flex-col items-center rounded-2xl bg-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-[0_10px_20px_rgba(146,9,43,0.3)] lg:w-[24rem]"
           >
@@ -475,7 +469,6 @@
             </div>
           </div>
 
-          <!-- Carta 3 -->
           <div
             class="flex min-h-[34rem] flex-col items-center rounded-2xl bg-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-[0_10px_20px_rgba(146,9,43,0.3)] lg:w-[24rem]"
           >
@@ -500,22 +493,23 @@
       </section>
 
       <section
-        class="flex min-h-[50vh] flex-col items-center bg-[#fff] px-6 pt-10 lg:flex-row lg:items-center lg:gap-x-16 lg:px-20"
+        class="flex min-h-[60vh] flex-col items-center justify-center gap-y-10 bg-[#fff] px-6 py-16 text-center lg:flex-row lg:items-center lg:gap-x-16 lg:px-20 lg:py-0 lg:text-left"
         id="presentacion"
       >
-        <article class="flex w-full justify-center pt-8 lg:w-1/2 lg:pt-0">
-          <div class="max-h-[fit-content] overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
+        <article class="flex w-full justify-center lg:w-1/2 lg:pt-0">
+          <div class="overflow-hidden rounded-lg">
             <img
-              src="public/picture/desktop/thumb_78_1920_800_0_0_crop.png"
-              alt="Hombre joven mirando el probador de fibra óptica"
-              class="max-h-full w-auto rounded-lg object-cover"
+              src="public/picture/desktop/pinturas-kBeF--1248x698@abc.webp"
+              alt="Artes plásticas de centro sant josep obrer"
+              class="w-full max-w-md rounded-lg object-cover"
             />
           </div>
         </article>
-        <article class="flex w-full max-w-4xl flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left">
-          <h2 class="mb-10 text-3xl font-bold lg:text-4xl">Artes plásticas</h2>
 
-          <hr class="mx-auto mb-6 h-1 w-24 rounded border-0 bg-black lg:mx-0" />
+        <article class="flex w-full max-w-4xl flex-col items-center lg:w-1/2 lg:items-start">
+          <h2 class="mb-6 text-3xl font-bold lg:mb-10 lg:text-4xl">Artes plásticas</h2>
+
+          <hr class="mb-6 h-1 w-24 rounded border-0 bg-black" />
 
           <p class="mb-4 max-w-3xl leading-relaxed">
             La expresión plástica es una de las actividades más espontáneas y gratificantes para los niños. Desde
@@ -527,13 +521,13 @@
       </section>
 
       <section
-        class="flex min-h-[50vh] flex-col-reverse items-center bg-[#f0f8f9] px-6 pt-10 lg:flex-row lg:items-center lg:gap-x-16 lg:px-20"
+        class="flex min-h-[60vh] flex-col-reverse items-center justify-center gap-y-10 bg-[#f0f8f9] px-6 py-16 text-center lg:flex-row lg:items-center lg:gap-x-16 lg:px-20 lg:py-0 lg:text-left"
         id="presentacion"
       >
-        <article class="flex w-full max-w-4xl flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left">
-          <h2 class="mb-10 text-3xl font-bold lg:text-4xl">Ludoteca</h2>
+        <article class="flex w-full max-w-4xl flex-col items-center lg:w-1/2 lg:items-start">
+          <h2 class="mb-6 text-3xl font-bold lg:mb-10 lg:text-4xl">Ludoteca</h2>
 
-          <hr class="mx-auto mb-6 h-1 w-24 rounded border-0 bg-black lg:mx-0" />
+          <hr class="mb-6 h-1 w-24 rounded border-0 bg-black" />
 
           <p class="mb-4 max-w-3xl leading-relaxed">
             Los rincones de juego simbólico responden a la necesidad que tiene el niño de conocer a los compañeros y
@@ -548,12 +542,12 @@
           </p>
         </article>
 
-        <article class="flex w-full justify-center pt-8 lg:w-1/2 lg:pt-0">
-          <div class="max-h-[fit-content] overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
+        <article class="flex w-full justify-center lg:w-1/2">
+          <div class="w-full max-w-md overflow-hidden rounded-lg shadow-lg">
             <img
-              src="public/picture/desktop/thumb_78_1920_800_0_0_crop.png"
+              src="public/picture/desktop/ludoteca.jpg"
               alt="Hombre joven mirando el probador de fibra óptica"
-              class="max-h-full w-auto rounded-lg object-cover"
+              class="w-full rounded-lg object-cover"
             />
           </div>
         </article>
@@ -561,7 +555,6 @@
 
       <section class="flex min-h-dvh items-center justify-center bg-[#fff] px-4 py-16">
         <div class="grid w-full max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-14 xl:gap-20">
-          <!-- Carta 1 -->
           <div
             class="flex min-h-[34rem] flex-col items-center rounded-2xl bg-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-[0_10px_20px_rgba(146,9,43,0.3)] lg:w-[24rem]"
           >
@@ -583,7 +576,6 @@
             </div>
           </div>
 
-          <!-- Carta 2 -->
           <div
             class="flex min-h-[34rem] flex-col items-center rounded-2xl bg-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-[0_10px_20px_rgba(146,9,43,0.3)] lg:w-[24rem]"
           >
@@ -605,7 +597,6 @@
             </div>
           </div>
 
-          <!-- Carta 3 -->
           <div
             class="flex min-h-[34rem] flex-col items-center rounded-2xl bg-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-[0_10px_20px_rgba(146,9,43,0.3)] lg:w-[24rem]"
           >
@@ -630,22 +621,23 @@
       </section>
 
       <section
-        class="flex min-h-[50vh] flex-col items-center bg-[#F0F8F9] px-6 pt-10 lg:flex-row lg:items-center lg:gap-x-16 lg:px-20"
+        class="flex min-h-[60vh] flex-col items-center justify-center gap-y-10 bg-[#F0F8F9] px-6 py-16 text-center lg:flex-row lg:items-center lg:gap-x-16 lg:px-20 lg:py-0 lg:text-left"
         id="presentacion"
       >
-        <article class="flex w-full justify-center pt-8 lg:w-1/2 lg:pt-0">
-          <div class="max-h-[fit-content] overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
+        <article class="flex w-full justify-center lg:w-1/2">
+          <div class="w-full max-w-md overflow-hidden rounded-lg shadow-lg">
             <img
-              src="public/picture/desktop/thumb_78_1920_800_0_0_crop.png"
+              src="public/picture/desktop/trabajo-por-proyectos-infantil-ronda-11.jpeg"
               alt="Hombre joven mirando el probador de fibra óptica"
-              class="max-h-full w-auto rounded-lg object-cover"
+              class="w-full rounded-lg object-cover"
             />
           </div>
         </article>
-        <article class="flex w-full max-w-4xl flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left">
-          <h2 class="mb-10 text-3xl font-bold lg:text-4xl">Proyectos de trabajo</h2>
 
-          <hr class="mx-auto mb-6 h-1 w-24 rounded border-0 bg-black lg:mx-0" />
+        <article class="flex w-full max-w-4xl flex-col items-center lg:w-1/2 lg:items-start">
+          <h2 class="mb-6 text-3xl font-bold lg:mb-10 lg:text-4xl">Proyectos de trabajo</h2>
+
+          <hr class="mb-6 h-1 w-24 rounded border-0 bg-black" />
 
           <p class="mb-4 max-w-3xl leading-relaxed">
             Estrategia de enseñanza-aprendizaje que nos ayuda a dar sentido a los problemas e interrogantes que tienen
@@ -657,29 +649,29 @@
       </section>
 
       <section
-        class="flex min-h-[50vh] flex-col-reverse items-center bg-[#fff] px-6 pt-10 lg:flex-row lg:items-center lg:gap-x-16 lg:px-20"
+        class="flex min-h-[60vh] flex-col-reverse items-center justify-center gap-y-10 bg-[#fff] px-6 py-16 text-center lg:flex-row lg:items-center lg:gap-x-16 lg:px-20 lg:py-0 lg:text-left"
         id="presentacion"
       >
-        <article class="flex w-full max-w-4xl flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left">
-          <h2 class="mb-10 text-3xl font-bold lg:text-4xl">Psicomotricidad</h2>
+        <article class="flex w-full max-w-4xl flex-col items-center lg:w-1/2 lg:items-start">
+          <h2 class="mb-6 text-3xl font-bold lg:mb-10 lg:text-4xl">Psicomotricidad</h2>
 
-          <hr class="mx-auto mb-6 h-1 w-24 rounded border-0 bg-black lg:mx-0" />
+          <hr class="mb-6 h-1 w-24 rounded border-0 bg-black" />
 
           <p class="mb-4 max-w-3xl leading-relaxed">
             Las sesiones de psicomotricidad son muy importantes para el desarrollo físico, emocional y social de los
             niños. Ponen en funcionamiento la creatividad y la imaginación a través de la exploración de distintos
             materiales. Y ayudan a mejorar las habilidades motrices de coordinación y equilibrio e consolidar su
             lateralidad. Es un aula mágica: movimiento, mente, cuerpo, respiración, relación, respeto. Los niños crecen,
-            juegan y aprenden mediante el movimiento
+            juegan y aprenden mediante el movimiento.
           </p>
         </article>
 
-        <article class="flex w-full justify-center pt-8 lg:w-1/2 lg:pt-0">
-          <div class="max-h-[fit-content] overflow-hidden rounded-lg shadow-lg" style="max-height: 80%">
+        <article class="flex w-full justify-center lg:w-1/2">
+          <div class="w-full max-w-md overflow-hidden rounded-lg shadow-lg">
             <img
-              src="public/picture/desktop/thumb_78_1920_800_0_0_crop.png"
+              src="public/picture/desktop/psicomotricidad.jpg"
               alt="Hombre joven mirando el probador de fibra óptica"
-              class="max-h-full w-auto rounded-lg object-cover"
+              class="w-full rounded-lg object-cover"
             />
           </div>
         </article>
