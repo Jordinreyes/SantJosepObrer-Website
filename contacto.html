@@ -364,38 +364,58 @@
     </header>
 
     <main class="main" id="main">
-      <section class="flex min-h-screen flex-col px-6 pb-10 pt-[8rem] sm:px-8 md:px-10 lg:px-20">
-        <h1 class="mb-8 text-center text-4xl font-bold tracking-wider sm:text-5xl">Contáctanos</h1>
+      <section class="flex min-h-screen flex-col px-6 pb-10 pt-[10rem] sm:px-8 md:px-10 lg:px-20">
+        <h1 class="mb-12 text-center text-4xl font-extrabold tracking-wide sm:text-7xl md:text-8xl">Contáctanos</h1>
 
         <div class="flex flex-1 flex-col gap-10 lg:flex-row lg:gap-6">
+          <!-- Formulario -->
           <article class="mx-auto w-full max-w-3xl lg:mx-0 lg:w-1/2">
-            <form class="flex flex-col gap-5 rounded-2xl bg-white p-6 shadow-md">
-              <input type="text" placeholder="Nombre" class="rounded border border-gray-300 p-3 focus:outline-none" />
-              <input type="email" placeholder="Email" class="rounded border border-gray-300 p-3 focus:outline-none" />
-              <input type="tel" placeholder="Teléfono" class="rounded border border-gray-300 p-3 focus:outline-none" />
+            <form class="flex flex-col gap-6 rounded-2xl bg-white p-8 shadow-md">
+              <input
+                type="text"
+                placeholder="Nombre"
+                class="rounded border border-gray-300 px-5 py-4 text-lg focus:border-black focus:outline-none"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="rounded border border-gray-300 px-5 py-4 text-lg focus:border-black focus:outline-none"
+                required
+              />
+              <input
+                type="tel"
+                placeholder="Teléfono"
+                class="rounded border border-gray-300 px-5 py-4 text-lg focus:border-black focus:outline-none"
+              />
               <textarea
-                rows="4"
+                rows="5"
                 placeholder="Mensaje"
-                class="rounded border border-gray-300 p-3 focus:outline-none"
+                class="resize-y rounded border border-gray-300 px-5 py-4 text-lg focus:border-black focus:outline-none"
+                required
               ></textarea>
-              <button type="submit" class="rounded bg-black py-3 text-white transition hover:bg-gray-800">
+              <button
+                type="submit"
+                class="rounded bg-black py-4 text-lg font-semibold text-white transition hover:bg-gray-800"
+              >
                 Enviar
               </button>
             </form>
           </article>
 
+          <!-- Información importante -->
           <article
-            class="mx-auto w-full max-w-3xl rounded-2xl bg-[#EAEAEA] p-6 text-base leading-relaxed text-black lg:mx-0 lg:w-1/2"
+            class="mx-auto w-full max-w-3xl rounded-2xl bg-[#EAEAEA] p-8 text-base leading-relaxed text-black lg:mx-0 lg:w-1/2"
+            style="height: auto"
           >
-            <div class="flex flex-col gap-4">
-              <h2 class="text-center text-lg font-bold text-black">IMPORTANTE</h2>
+            <div class="flex flex-col gap-6">
+              <h2 class="text-center text-xl font-bold text-black">IMPORTANTE</h2>
               <p>
                 Para ser colaborador de nuestra plataforma y formar parte de nuestra comunidad, es importante que
                 compartas nuestra visión de apoyar y empoderar a los diseñadores en su desarrollo profesional. Buscamos
                 personas comprometidas, creativas y con ganas de aportar valor a través de sus habilidades y
                 conocimientos. Como colaborador, te invitamos a participar activamente en la creación de recursos,
-                cursos y contenidos que enriquezcan la experiencia de los diseñadores que nos visitan
-                <br />
+                cursos y contenidos que enriquezcan la experiencia de los diseñadores que nos visitan.
               </p>
               <p class="hidden lg:block">
                 Además, es fundamental mantener una comunicación abierta, respetuosa y transparente, asegurando así una
