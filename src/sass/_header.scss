@@ -13,6 +13,7 @@
 
     /*  VARIABLES PARA HOVER Y TRANSICIONES */
     --navbar-hover: #f00;
+    --navbar-bg-color: #fff;
     --transition-navbar: 0.5s;
 }
 
@@ -39,6 +40,10 @@
     margin: var(--margin--icons);
 }
 
+.contactar {
+    color: #fff !important; ;
+}
+
 /*
     SCROOLL BAR
 */
@@ -54,7 +59,7 @@
 .scroll-bar {
     width: 100%;
     height: 20px;
-    background-color: #f00;
+    background-color: #92092B;
     position: absolute;
     top: 0;
     animation: scrollBounce 2s ease-in-out infinite;
@@ -86,7 +91,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: darkred;
+  background-color: #92092B;
   border-radius: 10px;
   border: 1px solid transparent; 
 }
@@ -108,6 +113,7 @@
 .header-white {
     background-color: #fff !important;
     transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
   
 .header-white .navbar__list a {
@@ -117,6 +123,11 @@
 
 .header-white .navbar__list a:hover {
     color: var(--navbar-hover) !important;
+    transform: scale(1.05) !important;
+}
+
+.header-white .navbar__list .sombra a:hover {
+    color: var(--navbar-bg-color) !important;
     transform: scale(1.05) !important;
 }
     
@@ -130,3 +141,16 @@
 .header-white .navbar__list #contactar i {
     color: #fff !important;
 }
+
+.header-white #hamburger {
+    color: #000 !important;
+}
+ 
+/*
+.navbar__list a.active-link,
+#mobile-menu a.active-link {
+  color: #92092B !important;
+  font-weight: bold;
+}
+
+*/
