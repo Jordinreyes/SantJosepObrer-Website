@@ -1,0 +1,156 @@
+
+
+:root{
+    /*  VARIABLES PARA NAVBAR   */
+    --header-color: #fff;
+    --header-gap: 20px;
+    --header-padding: 0 20px;
+    --font-size-navbar: 14px;
+    --color-enlace--contact: #92092B;
+
+    /*  ICONOS NAVBAR   */
+    --margin--icons: 0 0 0 5px;
+
+    /*  VARIABLES PARA HOVER Y TRANSICIONES */
+    --navbar-hover: #f00;
+    --navbar-bg-color: #fff;
+    --transition-navbar: 0.5s;
+}
+
+.container__section-header{
+    background: linear-gradient(#0009, #0009), url(../../public/picture/desktop/HomePage-Header.jpg) no-repeat center / cover;
+
+}
+
+.text-size-navbar {
+    font-size: var(--font-size-navbar);
+}
+  
+.link-hover-navbar {
+    display: inline-block;
+    transition: var(--transition-navbar);
+}
+  
+.link-hover-navbar:hover {
+    color: var(--navbar-hover);
+    transform: scale(1.05);
+}
+
+.navbar__list  i {
+    margin: var(--margin--icons);
+}
+
+.contactar {
+    color: #fff !important; ;
+}
+
+/*
+    SCROOLL BAR
+*/
+.scroll-container {
+    width: 4px;
+    height: 50px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.scroll-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #92092B;
+    position: absolute;
+    top: 0;
+    animation: scrollBounce 2s ease-in-out infinite;
+}
+
+@keyframes scrollBounce {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: calc(100% - 20px);
+    }
+    100% {
+        top: 0;
+    }
+}
+
+/*
+    EDITAR LA BARRA DE SCROLL
+*/
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+  
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #92092B;
+  border-radius: 10px;
+  border: 1px solid transparent; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #f00;
+}
+  
+/*
+    CAMBIAR DE COLOR EN EL HEADER
+*/
+
+.header-hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+  
+.header-white {
+    background-color: #fff !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.header-white .navbar__list a {
+    color: black !important;
+    font-weight: 500 !important;
+}
+
+.header-white .navbar__list a:hover {
+    color: var(--navbar-hover) !important;
+    transform: scale(1.05) !important;
+}
+
+.header-white .navbar__list .sombra a:hover {
+    color: var(--navbar-bg-color) !important;
+    transform: scale(1.05) !important;
+}
+    
+.header-white .navbar__list i {
+    color: #000!important;
+}
+.header-white .navbar__list #contactar {
+    color: #fff !important;
+}
+
+.header-white .navbar__list #contactar i {
+    color: #fff !important;
+}
+
+.header-white #hamburger {
+    color: #000 !important;
+}
+ 
+/*
+.navbar__list a.active-link,
+#mobile-menu a.active-link {
+  color: #92092B !important;
+  font-weight: bold;
+}
+
+*/
